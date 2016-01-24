@@ -1,8 +1,8 @@
 [user]
-	name = Yuan Gao	
+	name = Yuan Gao
 	email = gaoyuankidult@gmail.com
 [core]
-	editor = vim
+	editor = emacs
 	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
 	excludesfile = ~/.gitignore
 [sendemail]
