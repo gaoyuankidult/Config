@@ -47,13 +47,16 @@ if [ -f "/etc/default/keyboard.backup" ]; then
 fi
 
 # download current package list and prepare for software installation
-apt-get update
+apt-get update 
 apt-get install git emacs terminator texmaker 
 
-# create symbolic link to .emacs .gitconfig .gitignore
-ln -s .emacs ~/.emacs
-ln -s .gitconfig ~/.gitconfig
-ln -s .gitignore ~/.gitignore
+# create symbolic link to emacs configeration files .gitconfig .gitignore
+ln -s ~/Config/init.el ~/.emacs.d/init.el
+ln -s ~/Config/load-directory-mu.el ~/.emacs.d/load-directory-mu.el
+ln -s ~/Config/00-editor.el ~/.emacs.d/00-editor.el
+ln -s ~/Config/00-editor ~/.emacs.d/00-editor
+ln -s ~/Config/.gitconfig ~/.gitconfig
+ln -s ~/Config/.gitignore ~/.gitignore
 
 # disable capslock button
 cp /etc/default/keyboard /etc/default/keyboard.backup

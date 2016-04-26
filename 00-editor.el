@@ -1,5 +1,38 @@
 ;;; editor related settings
 
+;; load editor related libraries
+(load-directory-mu "~/.emacs.d/00-editor")
+
+;; base functions for copying
+(defun get-point (symbol &optional arg)
+  "get the point"
+  (funcall symbol arg)
+  (point)
+)
+     
+(defun copy-thing (begin-of-thing end-of-thing &optional arg)
+  "copy thing between beg & end into kill ring"
+  (save-excursion
+	(let ((beg (get-point begin-of-thing 1))
+		  (end (get-point end-of-thing arg)))
+	  (copy-region-as-kill beg end)))
+)
+     
+(defun paste-to-mark(&optional arg)
+  "Paste things to mark, or to the prompt in shell-mode"
+  (let ((pasteMe 
+     	 (lambda()
+     	   (if (string= "shell-mode" major-mode)
+			   (progn (comint-next-prompt 25535) (yank))
+			 (progn (goto-char (mark)) (yank) )))))
+	(if arg
+		(if (= arg 1)
+     		nil
+		  (funcall pasteMe))
+	  (funcall pasteMe))
+	)
+)
+
 ;; copy word
 (defun copy-word (&optional arg)
   "Copy words at point into kill-ring"
@@ -29,7 +62,7 @@
   (paste-to-mark arg)
   )
 
-(global-set-key (kbd "C-c s") (quote copy-string))
+(global-set-key (kbd "C-c s") (quote thing-copy-string-to-mark))
 
 
 ;; copy paragraph
@@ -42,6 +75,7 @@
 (global-set-key (kbd "C-c p") (quote copy-paragraph))
 
 ;; package list for auto completion
+(require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
 
 ;; set default indentation
