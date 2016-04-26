@@ -1,6 +1,6 @@
 ;;; editor related settings
 
-;; copy string
+;; copy word
 (defun copy-word (&optional arg)
   "Copy words at point into kill-ring"
   (interactive "P")
@@ -40,8 +40,6 @@
   (paste-to-mark arg)
   )
 (global-set-key (kbd "C-c p") (quote copy-paragraph))
-
-(require 'package)
 
 ;; package list for auto completion
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
