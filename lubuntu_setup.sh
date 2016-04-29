@@ -11,7 +11,7 @@
 # - But, use fast external commands to process very large inputs.
 #
 # - Avoid unnecessary subshells and pipelines.
-nn#
+#
 # - Don't preoptimize.
 #
 # - Learn the rules of quoting. Then, use quotes.
