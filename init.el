@@ -25,3 +25,4 @@
 
 ;;; load functional modules
 (load "~/.emacs.d/00-editor")
+(load "~/.emacs.d/01-system")
