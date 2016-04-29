@@ -40,7 +40,8 @@ if [[ $UID != 0 ]]; then
     exit 1
 fi
 
-# create symbolic link to .emacs .gitconfig .gitignore
+# remove symbolic link to .emacs .gitconfig .gitignore
+rm ~/.bash_profile
 rm ~/.emacs.d/init.el
 rm ~/.emacs.d/load-directory-mu.el
 rm ~/.emacs.d/00-editor.el

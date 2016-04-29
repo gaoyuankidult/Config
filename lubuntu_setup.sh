@@ -50,7 +50,8 @@ fi
 apt-get update 
 apt-get install git emacs terminator texmaker xclip
 
-# create symbolic link to emacs configeration files .gitconfig .gitignore
+# create symbolic link to emacs configeration files, .gitconfig, .gitignore and bash_profile.
+ln -s ~/Config/.bash_profile ~/.bash_profile
 ln -s ~/Config/init.el ~/.emacs.d/init.el
 ln -s ~/Config/load-directory-mu.el ~/.emacs.d/load-directory-mu.el
 ln -s ~/Config/00-editor.el ~/.emacs.d/00-editor.el

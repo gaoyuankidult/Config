@@ -23,4 +23,6 @@ All emacs files/folders will be softlinked to ~/.emacs.d/.  Please check [setup 
 - __01-system.el__ speficies system related emacs settings.
 - __load-directory-mu.el__ is a common lisp library files used to load all libraries in a folder.
 
+# Bash Files
 
+- __.bash_profile__ will be excuted, when user is logging in.
