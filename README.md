@@ -6,7 +6,7 @@ Currently, this repo only supports installation on lubuntu. I occationally updat
 ## Installation Files
 Two installation files are used in this folder, namely lubuntu_setup.sh and reset.sh
 
-- __lubuntu_setup.sh__ is used to install all the configerations files to its places.
+- __lubuntu_setup.sh__ is used to install all the configerations files to there places.
 - __reset.sh__ is used to remove all the installed files.
 
 ## Git Files
