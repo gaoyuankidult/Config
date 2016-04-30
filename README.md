@@ -25,4 +25,4 @@ All emacs files/folders will be softlinked to ~/.emacs.d/.  Please check [setup 
 
 ## Bash Files
 
-- __.bash_profile__ will be excuted, when user is logging in.
+- _._profile__ contains personal bash configerations.
