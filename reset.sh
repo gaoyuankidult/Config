@@ -41,7 +41,9 @@ if [[ $UID != 0 ]]; then
 fi
 
 # remove symbolic link to .emacs .gitconfig .gitignore
-sed -i.bak '#source ~/Config/.profile"#d' ~/.bashrc
+sed -i.bak '\#source ~/Config/.profile#d' ~/.bashrc
+sed -i.bak '\:# added by Anaconda2 4.0.0 installer:d' ~/.bashrc
+sed -i.bak '\#export PATH="/home/alex/anaconda2/bin:$PATH"#d' ~/.bashrc
 rm ~/.emacs.d/init.el
 rm ~/.emacs.d/load-directory-mu.el
 rm ~/.emacs.d/00-editor.el

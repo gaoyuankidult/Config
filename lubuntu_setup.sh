@@ -1,4 +1,8 @@
-#!/bin/bash
+select ln -s in ; do
+	$ln -s
+done
+
+	#!/bin/bash
 
 #################################################################################
 # Coding conventions
@@ -56,7 +60,7 @@ echo 'source ~/Config/.profile' >> ~/.bashrc
 ln -s ~/Config/init.el ~/.emacs.d/init.el
 ln -s ~/Config/load-directory-mu.el ~/.emacs.d/load-directory-mu.el
 ln -s ~/Config/00-editor.el ~/.emacs.d/00-editor.el
-ln -s ~/Config/00-editor.el ~/.emacs.d/01-system.el
+ln -s ~/Config/01-system.el ~/.emacs.d/01-system.el
 ln -s ~/Config/00-editor ~/.emacs.d/00-editor
 ln -s ~/Config/.gitconfig ~/.gitconfig
 ln -s ~/Config/.gitignore ~/.gitignore
