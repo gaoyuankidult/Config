@@ -1,8 +1,4 @@
-select ln -s in ; do
-	$ln -s
-done
-
-	#!/bin/bash
+#!/bin/bash
 
 #################################################################################
 # Coding conventions
@@ -53,6 +49,11 @@ fi
 # download current package list and prepare for software installation
 apt-get update 
 apt-get install git emacs terminator texmaker xclip
+
+# install anaconda
+wget http://repo.continuum.io/archive/Anaconda2-4.0.0-Linux-x86_64.sh
+chmod +x Anaconda2-4.0.0-Linux-x86_64.sh
+./Anaconda2-4.0.0-Linux-x86_64.sh
 
 # create symbolic link to emacs configeration files, .gitconfig, .gitignore and bash_profile.
 
