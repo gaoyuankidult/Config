@@ -71,7 +71,7 @@ ln -s ~/Config/.gitignore ~/.gitignore
 
 # disable capslock button
 cp /etc/default/keyboard /etc/default/keyboard.backup
-cat /etc/default/keyboard | sed 's/\(XKBOPTIONS="\)/1ctrl:nocaps,/' > /etc/default/keyboard
+sed -i 's/\(XKBOPTIONS="\)/&ctrl:nocaps,/' /etc/default/keyboard
 dpkg-reconfigure -phigh console-setup
 
 # generate ssh key and setup github
