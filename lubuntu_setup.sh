@@ -50,6 +50,9 @@ fi
 apt-get update 
 apt-get install git emacs terminator texmaker xclip
 
+# install gnome related operations e.g. gnome-session-quit (to log out from command line)
+apt-get install gnome-session-bin
+
 # install anaconda
 wget http://repo.continuum.io/archive/Anaconda2-4.0.0-Linux-x86_64.sh
 chmod +x Anaconda2-4.0.0-Linux-x86_64.sh
