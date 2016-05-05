@@ -25,4 +25,4 @@ All emacs files/folders will be softlinked to ~/.emacs.d/.  Please check [setup 
 
 ## Bash Files
 
-- _._profile__ contains personal bash configerations.
+- __.profile__ contains personal bash configerations.
