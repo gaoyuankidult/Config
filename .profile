@@ -15,5 +15,9 @@ alias ..5="cd ../../../../.."
 # shortcut for git
 alias g='git'
 
+# shortcut for emacs
+alias e='emacs'
+alias enw='emacs -nw'
+
 # shortcut to logout GUI
 alias lo='sudo pkill -u ${USER}'
