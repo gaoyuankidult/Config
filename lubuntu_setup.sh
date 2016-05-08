@@ -48,7 +48,7 @@ fi
 
 # download current package list and prepare for software installation
 apt-get update 
-apt-get install git emacs terminator texmaker xclip
+apt-get install git emacs terminator texmaker xclip tmux
 
 # install gnome related operations e.g. gnome-session-quit (to log out from command line)
 apt-get install gnome-session-bin
