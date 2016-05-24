@@ -23,5 +23,5 @@ alias ge='emacs'
 alias lo='sudo pkill -u ${USER}'
 
 # shortcut to shutdown
-alias stn='shutdown now'
+alias sdn='shutdown now'
 
