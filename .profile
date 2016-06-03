@@ -19,9 +19,17 @@ alias g='git'
 alias e='emacs -nw'
 alias ge='emacs'
 
+# shortcut for source
+alias s='source'
+
 # shortcut to logout GUI
 alias lo='sudo pkill -u ${USER}'
 
 # shortcut to shutdown
 alias sdn='shutdown now'
 
+# shortcut for running studying video
+alias cds='cd /home/alex/Downloads/RH/RHCSALiveLessons/'
+function srun() {
+	nohup mplayer /home/alex/Downloads/RH/RHCSALiveLessons/part$1.mp4 > /tmp/nohup.out &
+}
