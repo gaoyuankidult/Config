@@ -59,7 +59,6 @@ chmod +x Anaconda2-4.0.0-Linux-x86_64.sh
 ./Anaconda2-4.0.0-Linux-x86_64.sh
 
 # create symbolic link to emacs configeration files, .gitconfig, .gitignore and bash_profile.
-
 echo 'source ~/Config/.profile' >> ~/.bashrc 
 ln -s ~/Config/init.el ~/.emacs.d/init.el
 ln -s ~/Config/load-directory-mu.el ~/.emacs.d/load-directory-mu.el
@@ -84,3 +83,5 @@ echo "Please excute..."
 echo "xclip -sel clip < ~/.ssh/id_rsa.pub"
 echo "...and paste it on GitHub ssh settings."
 
+# add terminator to autostart in lubuntu
+ln -s ~/Config/autostart.desktop ~/.config/autostart/autostart.desktop

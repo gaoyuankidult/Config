@@ -53,6 +53,7 @@ rm ~/.gitconfig
 rm ~/.gitignore
 rm ~/.ssh/id_rsa
 rm ~/.ssh/id_rsa.pub
+rm ~/.config/autostart/autostart.desktop
 
 
 # disable capslock button
