@@ -45,7 +45,7 @@ function ag() { # auto git
 
 # shortcut for compile latex
 function cl() {
-	pdflatex "$1" > /dev/null
+	pdflatex "$1"
 	filename=$(basename "$1")
 	extension="${filename##*.}"
 	filename="${filename%.*}"	
