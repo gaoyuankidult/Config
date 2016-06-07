@@ -25,8 +25,9 @@ alias s='source'
 # shortcut to logout GUI
 alias lo='sudo pkill -u ${USER}'
 
-# shortcut to shutdown
+# shortcut to shutdown and reboot
 alias sdn='shutdown now'
+alias rb='reboot'
 
 # shortcut for running studying video
 alias cds='cd /home/alex/Downloads/RH/RHCSALiveLessons/'
@@ -40,3 +41,4 @@ function ag() {
 	git commit -m "$1"
 	git push
 }
+
