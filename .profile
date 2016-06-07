@@ -33,3 +33,10 @@ alias cds='cd /home/alex/Downloads/RH/RHCSALiveLessons/'
 function srun() {
 	nohup mplayer /home/alex/Downloads/RH/RHCSALiveLessons/part$1.mp4 > /tmp/nohup.out 2> /tmp/nohup_error.out &
 }
+
+# short cut for simple git routines
+function ag() {
+	git a .
+	git commit -m "$1"
+	git push
+}
