@@ -81,3 +81,6 @@
 ;; set default indentation
 (setq default-tab-width 4)
 
+;; save cursor position
+(require 'saveplace)
+(setq-default save-place t)
