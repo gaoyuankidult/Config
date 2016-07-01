@@ -33,7 +33,7 @@ alias rb='reboot' # reboot
 # shortcut for running studying video
 alias cds='cd /home/alex/Downloads/RH/RHCSALiveLessons/'
 function srun() {
-	nohup mplayer /home/alex/Downloads/RH/RHCSALiveLessons/part$1.mp4 > /tmp/nohup.out 2> /tmp/nohup_error.out &
+	nohup mplayer /home/alex/Downloads/RH/RHCELiveLessons/part$1.mp4 > /tmp/nohup.out 2> /tmp/nohup_error.out &
 }
 
 # shortcut for simple git routines
