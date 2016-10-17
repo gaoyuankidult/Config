@@ -30,6 +30,9 @@ alias lo='sudo pkill -u ${USER}'
 alias sdn='shutdown now' # shutdown now
 alias rb='reboot' # reboot
 
+# shortcut for creating README template in a git folder
+alias ct="cp ~/Config/readme_tmp.md README.md"
+
 # shortcut for running studying video
 alias cds='cd /home/alex/Downloads/RH/RHCELiveLessons/'
 function srun() {
