@@ -64,3 +64,21 @@ function cl() {
 	filename="${filename%.*}"	
 	$(evince "$filename.pdf" > /dev/null 2> /dev/null &)
 }
+
+# add anaconda path to system
+export PATH="/home/alex/anaconda2/bin:$PATH"
+
+# create anaconda package
+function ic() { # init conda
+	conda update conda
+	conda create -n "$1" python=2.7 anaconda
+}
+
+# switch to conda environment
+function coa() { # conda activate
+	source activate "$1"
+}
+
+# deactivate conda environment
+alias cod="source deactivate"
+
