@@ -6,6 +6,9 @@ alias cdd='cd ~/Desktop'
 alias cdc='cd ~/Config'
 alias cdr='cd ~/Desktop/PhD/Research'
 
+# shortcut for moving to current project
+alias cdp='cd ~/Desktop/RedCoast'
+
 # shortcut to nevigate up directory using ..n
 alias ..="cd .."
 alias ..2="cd ../.."
@@ -35,7 +38,6 @@ function crt() { # copy read template
 	cp ~/Config/readme_tmp.md README.md
 	cp ~/Config/header.png header.png
 }
-
 
 # shortcut for running studying video
 alias cds='cd /home/alex/Downloads/RH/RHCELiveLessons/'
