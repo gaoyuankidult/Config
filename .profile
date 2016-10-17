@@ -31,7 +31,7 @@ alias sdn='shutdown now' # shutdown now
 alias rb='reboot' # reboot
 
 # shortcut for creating README template in a git folder
-function ct() {
+function crt() { # copy read template
 	cp ~/Config/readme_tmp.md README.md
 	cp ~/Config/header.png header.png
 }
