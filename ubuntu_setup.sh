@@ -57,7 +57,7 @@ apt-get install gnome-session-bin
 # install anaconda
 wget http://repo.continuum.io/archive/Anaconda2-4.0.0-Linux-x86_64.sh
 chmod +x Anaconda2-4.0.0-Linux-x86_64.sh
-./Anaconda2-4.0.0-Linux-x86_64.sh
+sudo -u alex bash -c './Anaconda2-4.0.0-Linux-x86_64.sh'
 
 # create symbolic link to emacs configeration files, .gitconfig, .gitignore and bash_profile.
 echo 'source ~/Config/.profile' >> ~/.bashrc 
