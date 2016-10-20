@@ -54,4 +54,5 @@ function cl() {
 	extension="${filename##*.}"
 	filename="${filename%.*}"	
 	$(evince "$filename.pdf" > /dev/null 2> /dev/null &)
+	fg
 }
