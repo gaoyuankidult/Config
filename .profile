@@ -83,3 +83,5 @@ function coa() { # conda activate
 # deactivate conda environment
 alias cod="source deactivate"
 
+# automatically start to do RedCoast project (this command is used only on my private computer)
+alias rc="ssh -X alega837 ssh -X alex ~/Desktop/pycharm-2016.2.3/bin/pycharm.sh"
