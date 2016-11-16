@@ -58,6 +58,7 @@ apt-get install gnome-session-bin
 wget http://repo.continuum.io/archive/Anaconda2-4.0.0-Linux-x86_64.sh
 chmod +x Anaconda2-4.0.0-Linux-x86_64.sh
 ./Anaconda2-4.0.0-Linux-x86_64.sh
+rm Anaconda2-4.0.0-Linux-x86_64.sh
 
 # create symbolic link to emacs configeration files, .gitconfig, .gitignore and bash_profile.
 echo 'source ~/Config/.profile' >> ~/.bashrc 
@@ -74,15 +75,17 @@ cp /etc/default/keyboard /etc/default/keyboard.backup
 sed -i 's/\(XKBOPTIONS="\)/&ctrl:nocaps,/' /etc/default/keyboard
 dpkg-reconfigure -phigh console-setup
 
+# add terminator to autostart in lubuntu
+mkdir -p ~/.config/autostart/
+ln -s ~/Config/autostart.desktop ~/.config/autostart/autostart.desktop
+
 # generate ssh key and setup github
-sudo -H -u alex bash -c 'ssh-keygen -t rsa -b 4096 -C "gaoyuankidult@gmail.com"'
-sudo -H -u alex bash -c 'eval "$(ssh-agent -s)"'
-sudo -H -u alex bash -c 'ssh-add ~/.ssh/id_rsa'
+sudo -H -u $USER bash -c 'ssh-keygen -t rsa -b 4096 -C "gaoyuankidult@gmail.com"'
+sudo -H -u $USER bash -c 'eval "$(ssh-agent -s)"'
+sudo -H -u $USER bash -c 'ssh-add ~/.ssh/id_rsa'
 
 echo ""
 echo "Please excute..."
 echo "xclip -sel clip < ~/.ssh/id_rsa.pub"
 echo "...and paste it on GitHub ssh settings."
 
-# add terminator to autostart in lubuntu
-ln -s ~/Config/autostart.desktop ~/.config/autostart/autostart.desktop
