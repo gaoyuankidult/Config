@@ -7,6 +7,13 @@
 *.o
 *.so
 
+*.pyc
+
+*.aux
+*.log
+*.synctex.gz
+*.toc
+
 # Temporary files #
 ###################
 *.swp
