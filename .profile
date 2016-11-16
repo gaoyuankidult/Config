@@ -85,3 +85,6 @@ alias cod="source deactivate"
 
 # automatically start to do RedCoast project (this command is used only on my private computer)
 alias rc="ssh -X alega837 ssh -X alex ~/Desktop/pycharm-2016.2.3/bin/pycharm.sh"
+
+# automatically start a terminator at pc-alega837
+alias pct="ssh -X alega837 ssh -X alex terminator"
