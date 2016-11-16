@@ -79,6 +79,10 @@ dpkg-reconfigure -phigh console-setup
 mkdir -p ~/.config/autostart/
 ln -s ~/Config/autostart.desktop ~/.config/autostart/autostart.desktop
 
+# set remote url of Config to be via git instead of https
+cd /home/$USER/Config
+git remote set-url orgin git@github.com:gaoyuankidult/Config.git
+
 # generate ssh key and setup github
 sudo -H -u $USER bash -c 'ssh-keygen -t rsa -b 4096 -C "gaoyuankidult@gmail.com"'
 sudo -H -u $USER bash -c 'eval "$(ssh-agent -s)"'
