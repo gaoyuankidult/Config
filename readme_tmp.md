@@ -51,6 +51,10 @@ npm test
 * 0.0.1
     * Work in progress
 
+## LICENCE
+
+[MIT Licence](https://en.wikipedia.org/wiki/MIT_License)
+
 ## Meta
 
 Your Name – [@YourTwitter](https://twitter.com/dbader_org) – YourEmail@example.com
