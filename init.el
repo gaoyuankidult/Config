@@ -12,16 +12,16 @@
                          ("marmalade" . "http://marmalade-repo.org/packages/")))
 
 ;; activate all the packages (in particular autoloads)
-(package-initialize)
+;(package-initialize)
 
 ;; fetch the list of packages available 
-(unless package-archive-contents
-  (package-refresh-contents))
+;(unless package-archive-contents
+;  (package-refresh-contents))
 
 ;; install the missing packages
-(dolist (package package-list)
-  (unless (package-installed-p package)
-    (package-install package)))
+;(dolist (package package-list)
+;  (unless (package-installed-p package)
+;    (package-install package)))
 
 ;;; load functional modules
 (load "~/.emacs.d/00-editor")
