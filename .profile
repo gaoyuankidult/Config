@@ -93,3 +93,5 @@ alias ppct="sshpass -pim3Mb[jbiZ ssh -X alega837 ssh -X alex terminator"
 # connect to our groups website cloud (this command is used only on alega837 pc)
 alias cw="ssh -i /home/alex/.ssh/alex_yuan_gao.pem -l ubuntu 130.238.10.22"
 
+# connect to alex in inner network
+alias calex="ssh -X 130.238.17.189 terminator"

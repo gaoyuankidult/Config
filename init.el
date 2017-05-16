@@ -38,3 +38,6 @@
 	(goto-char (point-max))
 	(eval-print-last-sexp)))
 (el-get 'sync)
+
+;;;  tell emacs to not warn me about anything except problems
+(setq warning-minimum-level :emergency)
