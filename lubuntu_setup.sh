@@ -62,6 +62,7 @@ rm Anaconda2-4.0.0-Linux-x86_64.sh
 
 # create symbolic link to emacs configeration files, .gitconfig, .gitignore and bash_profile.
 echo 'source ~/Config/.profile' >> ~/.bashrc 
+mkdir ~/.emacs.d
 ln -s ~/Config/init.el ~/.emacs.d/init.el
 ln -s ~/Config/load-directory-mu.el ~/.emacs.d/load-directory-mu.el
 ln -s ~/Config/00-editor.el ~/.emacs.d/00-editor.el
@@ -80,13 +81,12 @@ mkdir -p ~/.config/autostart/
 ln -s ~/Config/autostart.desktop ~/.config/autostart/autostart.desktop
 
 # set remote url of Config to be via git instead of https
-cd /home/$USER/Config
-git remote set-url orgin git@github.com:gaoyuankidult/Config.git
+cd /home/alex/Config
+git remote set-url origin git@github.com:gaoyuankidult/Config.git
 
 # generate ssh key and setup github
-sudo -H -u $USER bash -c 'ssh-keygen -t rsa -b 4096 -C "gaoyuankidult@gmail.com"'
-sudo -H -u $USER bash -c 'eval "$(ssh-agent -s)"'
-sudo -H -u $USER bash -c 'ssh-add ~/.ssh/id_rsa'
+sudo -H -u alex bash -c 'ssh-keygen -t rsa -b 4096 -C "gaoyuankidult@gmail.com"'
+sudo -H -u alex bash -c 'eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_rsa'
 
 echo ""
 echo "Please excute..."
