@@ -31,13 +31,11 @@
 #
 ################################################################################
 
-# download pynaoqi-python2.7-2.1.2.17-linux64.tar to your download folder
+# download pynaoqi-python2.7-2.5.5.5-linux64.tar to your download folder
 mkdir ~/naoqi
-cp ~/Downloads/pynaoqi* ~/Downloads/naoqi* ~/naoqi
-cd ~/naoqi
+cp ~/Downloads/pynaoqi* ~/naoqi
 
-tar xzf naoqi*
 tar xzf pynaoqi*
 
-export PYTHONPATH=~/naoqi/pynaoqi-python2.7-2.1.4.13-linux64:$PYTHONPATH
-echo 'export PYTHONPATH=~/naoqi/pynaoqi-python2.7-2.1.4.13-linux64:$PYTHONPATH' >> ~/.bashrc
+export PYTHONPATH=/home/alex/naoqi/pynaoqi-python2.7-2.5.5.5-linux64/lib/python2.7/site-packages/:$PYTHONPATH
+echo 'export PYTHONPATH=/home/alex/naoqi/pynaoqi-python2.7-2.5.5.5-linux64/lib/python2.7/site-packages' >> ~/.bashrc

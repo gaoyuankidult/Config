@@ -95,3 +95,14 @@ alias cw="ssh -i /home/alex/.ssh/alex_yuan_gao.pem -l ubuntu 130.238.10.22"
 
 # connect to alex in inner network
 alias calex="ssh -X 130.238.17.189 terminator"
+
+# change the default backgroud to be relatively dark
+xsetroot -solid "#111111"
+
+# set default xclip to be output using ctrl+shift+c 
+alias xclip='xclip -selection c'
+
+# set the shortcut for pycharm
+alias pycharm='~/Downloads/pycharm-community-2017.1.3/bin/pycharm.sh'
+
+
