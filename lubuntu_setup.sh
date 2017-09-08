@@ -84,6 +84,9 @@ ln -s ~/Config/autostart.desktop ~/.config/autostart/autostart.desktop
 cd /home/alex/Config
 git remote set-url origin git@github.com:gaoyuankidult/Config.git
 
+# create symbolic link to i3 configeration files
+ln -s ~/Config/i3/config ~/.config/i3/config
+
 # generate ssh key and setup github
 sudo -H -u alex bash -c 'ssh-keygen -t rsa -b 4096 -C "gaoyuankidult@gmail.com"'
 sudo -H -u alex bash -c 'eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_rsa'
@@ -93,3 +96,24 @@ echo "Please excute..."
 echo "xclip -sel clip < ~/.ssh/id_rsa.pub"
 echo "...and paste it on GitHub ssh settings."
 
+# confirm that the user is done with the ssh
+while true; do
+    read -p "Have you done installation of git ?" yn
+    case $yn in
+        [Yy]* ) echo "Installation continues...";;
+        [Nn]* ) echo "Pleae install git fist.";;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
+# install i3-gap for i3 environment
+sudo apt-get install autoconf libev-dev
+cd ~/Desktop
+git clone https://www.github.com/Airblader/i3 i3-gaps
+cd i3-gaps
+autoreconf --force --install
+rm -rf build/
+mkdir -p build && cd build/
+../configure --prefix=/usr --sysconfdir=/etc --disable-sanitizers
+make
+sudo make install
