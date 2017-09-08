@@ -30,8 +30,8 @@ alias s='source'
 alias lo='sudo pkill -u ${USER}'
 
 # shortcut to shutdown and reboot
-alias sdn='shutdown now' # shutdown now
-alias rb='reboot' # reboot
+alias sdn='sudo shutdown now' # shutdown now
+alias rb='sudo reboot' # reboot
 
 # shortcut for creating README template in a git folder
 function crt() { # copy read template
