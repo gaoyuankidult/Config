@@ -107,7 +107,27 @@ while true; do
 done
 
 # install i3-gap for i3 environment
-sudo apt-get install autoconf libev-dev
+sudo apt-get install autoconf libev-dev 
+sudo apt-get install libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev libxcb-icccm4-dev libyajl-dev libstartup-notification0-dev libxcb-randr0-dev libev-dev libxcb-cursor-dev libxcb-xinerama0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev autoconf libxcb-xrm-dev
+
+
+cd ~/Desktop
+wget http://ftp.br.debian.org/debian/pool/main/x/xcb-util-xrm/libxcb-xrm0_1.0-2_amd64.deb
+wget http://ftp.br.debian.org/debian/pool/main/x/xcb-util-xrm/libxcb-xrm-dev_1.0-2_amd64.deb
+sudo dpkg -i libxcb-xrm0_1.0-2_amd64.deb
+sudo dpkg -i libxcb-xrm-dev_1.0-2_amd64.deb
+
+sudo apt-get build-dep cairo
+wget http://cairographics.org/releases/cairo-1.14.6.tar.xz
+tar xf cairo-1.14.6.tar.xz
+cd cairo-1.14.6
+
+./configure --prefix=$HOME/prefix
+make
+make install
+export PKG_CONFIG_PATH=$HOME/prefix/lib/pkgconfig
+export LD_LIBRARY_PATH=$HOME/prefix/lib
+
 cd ~/Desktop
 git clone https://www.github.com/Airblader/i3 i3-gaps
 cd i3-gaps
