@@ -1,0 +1,32 @@
+[global_config]
+  window_state = hidden
+  title_hide_sizetext = True
+  borderless = True
+  geometry_hinting = False
+  enabled_plugins = CustomCommandsMenu, LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  title_receive_bg_color = "#0fc900"
+  title_transmit_bg_color = "#000000"
+[keybindings]
+[profiles]
+  [[default]]
+    palette = "#000000:#aa0000:#00aa00:#aa5500:#0000aa:#aa00aa:#00aaaa:#aaaaaa:#555555:#ff5555:#55ff55:#ffff55:#5555ff:#ff55ff:#55ffff:#ffffff"
+    background_darkness = 0.83
+    background_type = transparent
+    background_image = None
+    cursor_color = "#ffffff"
+    foreground_color = "#047a04"
+    icon_bell = False
+    show_titlebar = False
+    antialias = False
+    cursor_shape = ibeam
+    allow_bold = False
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]

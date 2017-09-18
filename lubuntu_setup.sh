@@ -84,8 +84,13 @@ ln -s ~/Config/autostart.desktop ~/.config/autostart/autostart.desktop
 cd /home/alex/Config
 git remote set-url origin git@github.com:gaoyuankidult/Config.git
 
-# create symbolic link to i3 configeration files
+# create symbolic links to i3 configeration files
+mkdir -p ~/.config/i3
 ln -s ~/Config/i3/config ~/.config/i3/config
+ln -s ~/Config/i3/i3status.conf ~/.config/i3/i3status.conf
+
+# create a symbolic links to terminator configeration file
+ln -s ~/Config/terminator/config ~/.config/terminator/config
 
 # generate ssh key and setup github
 sudo -H -u alex bash -c 'ssh-keygen -t rsa -b 4096 -C "gaoyuankidult@gmail.com"'
@@ -106,10 +111,9 @@ while true; do
     esac
 done
 
-# install i3-gap for i3 environment
+# install i3-gap for i3 environment under ubuntu 14.04
 sudo apt-get install autoconf libev-dev 
 sudo apt-get install libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev libxcb-icccm4-dev libyajl-dev libstartup-notification0-dev libxcb-randr0-dev libev-dev libxcb-cursor-dev libxcb-xinerama0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev autoconf libxcb-xrm-dev
-
 
 cd ~/Desktop
 wget http://ftp.br.debian.org/debian/pool/main/x/xcb-util-xrm/libxcb-xrm0_1.0-2_amd64.deb
@@ -137,3 +141,7 @@ mkdir -p build && cd build/
 ../configure --prefix=/usr --sysconfdir=/etc --disable-sanitizers
 make
 sudo make install
+
+# install feh for i3 wall paper
+apt-get install feh
+
