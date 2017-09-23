@@ -48,7 +48,7 @@ fi
 
 # download current package list and prepare for software installation
 apt-get update 
-apt-get install git emacs terminator texmaker xclip tmux uget ssh python-pip sshpass gnome-do gnome-session-fallback i3 compizconfig-settings-manager compiz-plugins-extra
+apt-get install git emacs terminator texmaker xclip tmux uget ssh python-pip sshpass gnome-do gnome-session-fallback i3 compizconfig-settings-manager compiz-plugins-extra amixer texlive-full
 pip install setuptools
 
 # install gnome related operations e.g. gnome-session-quit (to log out from command line)
@@ -145,3 +145,22 @@ sudo make install
 # install feh for i3 wall paper
 apt-get install feh
 
+# install udiskie to autoload removable disk for i3
+apt-get install python-setuptools udisks python-pip python-gobject python-yaml libgio2.0 gobject-introspection libgtk2.0-0 libnotify4 gettext gir1.2-notify-0.7
+pip install udiskie
+echo "[mount]
+Identity=unix-group:plugdev
+Action=org.freedesktop.udisks.filesystem-mount
+ResultAny=yes
+[unlock]
+Identity=unix-group:plugdev
+Action=org.freedesktop.udisks.luks-unlock
+ResultAny=yes
+[eject]
+Identity=unix-group:plugdev
+Action=org.freedesktop.udisks.drive-eject
+ResultAny=yes
+[detach]
+Identity=unix-group:plugdev
+Action=org.freedesktop.udisks.drive-detach
+ResultAny=yes" >> /etc/polkit-1/localauthority/50-local.d/consolekit.pkla

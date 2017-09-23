@@ -35,8 +35,14 @@ alias rb='sudo reboot' # reboot
 
 # shortcut for creating README template in a git folder
 function crt() { # copy read template
-	cp ~/Config/readme_tmp.md README.md
-	cp ~/Config/header.png header.png
+	cp ~/Config/templates/readme_tmp.md README.md
+	cp ~/Config/templates/header.png header.png
+}
+
+# shortcut for creating latex template in a git folder
+function clt() { # copy read templat
+	cp -r ~/Config/templates/icml $1
+	mv ./$1/example_paper.tex ./$1/$1.tex
 }
 
 # shortcut for running studying video
@@ -116,3 +122,26 @@ alias el='emacs -nw ~/Config/lubuntu_setup.sh'
 
 # set shortcut to edit i3 config file
 alias ei3='emacs -nw ~/Config/i3/config'
+
+# copy to clipboad
+function x() { # conda activate
+	echo "$1" | xclip -sel clip 
+}
+
+# copy current directory
+alias xd='x $(pwd)'
+
+# set shortcut to go to different projects
+alias gps='cd ~/Desktop/SocialRoboics/motor-blog/web-static'
+alias gpp='cd /media/alex/22E67196E6716AC5/Materials/Research/Proximity/tsv_files'
+alias gpr='cd ~/Desktop/red-coast'
+alias spr='source ~/Desktop/red-coast/start_dev.sh'
+
+# to accelerate installation
+alias i="sudo apt-get install"
+
+# go to folder media
+alias gm='cd /media/'
+
+# debug i3
+alias di3="i3-msg 'debuglog on; shmlog on; reload'"

@@ -12,17 +12,25 @@
 						 ("melpa-stable" . "https://stable.melpa.org/packages/")
                          ("marmalade" . "http://marmalade-repo.org/packages/")))
 
-;; activate all the packages (in particular autoloads)
-;(package-initialize)
+
+
+
+;; list the packages you want
+(setq package-list
+    '(auctex))
+
+
+;; activate all the packages
+(package-initialize)
 
 ;; fetch the list of packages available 
-;(unless package-archive-contents
-;  (package-refresh-contents))
+(unless package-archive-contents
+  (package-refresh-contents))
 
 ;; install the missing packages
-;(dolist (package package-list)
-;  (unless (package-installed-p package)
-;    (package-install package)))
+(dolist (package package-list)
+  (unless (package-installed-p package)
+    (package-install package)))
 
 ;;; load functional modules
 (load "~/.emacs.d/00-editor")
@@ -40,5 +48,9 @@
 	(eval-print-last-sexp)))
 (el-get 'sync)
 
-;;;  tell emacs to not warn me about anything except problems
+;;; activate different packages
+; invoke the AUCTeX package (LaTeX support)
+(require 'tex-site)
+
+;;; tell emacs to not warn me about anything except problems
 (setq warning-minimum-level :emergency)
