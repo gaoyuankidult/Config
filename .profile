@@ -152,3 +152,17 @@ VISUAL="emacs25 -nw";
 export VISUAL 
 EDITOR="emacs25 -nw"; 
 export EDITOR
+
+# set shortcut for task management
+alias t="task add"
+alias tl="task list"
+
+function d(){
+	echo $1
+	task $1 done
+}
+
+# reset PS1 parameter in order to get better presentation
+export PS1="\n(\j)-(\A)\n#"
+
+

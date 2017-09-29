@@ -48,7 +48,7 @@ fi
 
 # download current package list and prepare for software installation
 apt-get update 
-apt-get install git terminator texmaker xclip tmux uget ssh python-pip sshpass gnome-do gnome-session-fallback i3 compizconfig-settings-manager compiz-plugins-extra amixer texlive-full zathura
+apt-get install git terminator texmaker xclip tmux uget ssh python-pip sshpass gnome-do gnome-session-fallback i3 compizconfig-settings-manager compiz-plugins-extra amixer texlive-full zathura tty-clock task inotify-tools
 pip install setuptools python-virtualenv
 
 # install emacs25 and set it as default
@@ -179,3 +179,4 @@ dpkg -i netease-cloud-music_1.0.0-2_amd64_ubuntu14.04.deb
 ln -s ~/Config/mimeapps.list ~/.config/mimeapps.list
 ln -s ~/Config/mimeapps.list ~/.local/share/applications/mimeapps.list
 ln -s ~/Config/.toprc ~/.toprc
+ln -s ~/Config/.taskrc ~/.taskrc

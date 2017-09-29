@@ -93,8 +93,12 @@
 (setq default-tab-width 4)
 
 ;; save cursor position
-(require 'saveplace)
-(setq-default save-place t)
+;; remember cursor position
+(if (version< emacs-version "25.0")
+    (progn
+      (require 'saveplace)
+      (setq-default save-place t))
+  (save-place-mode 1))
 
 ;; set keybindings for auto-complete
 (define-key ac-completing-map (kbd "RET") nil)
@@ -102,4 +106,8 @@
 ;; set keybindings for ranger-mode
 (global-set-key (kbd "C-c C-f") 'ranger-mode)
 
-
+;; set keybindings in ranger-mode
+(require 'ranger)
+(defun load-customized-file ()
+	(load-file "~/Config/emacs-ranger.el"))
+(add-hook 'ranger-mode-hook 'load-customized-file)
