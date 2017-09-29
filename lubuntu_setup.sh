@@ -48,8 +48,13 @@ fi
 
 # download current package list and prepare for software installation
 apt-get update 
-apt-get install git emacs terminator texmaker xclip tmux uget ssh python-pip sshpass gnome-do gnome-session-fallback i3 compizconfig-settings-manager compiz-plugins-extra amixer texlive-full
-pip install setuptools
+apt-get install git terminator texmaker xclip tmux uget ssh python-pip sshpass gnome-do gnome-session-fallback i3 compizconfig-settings-manager compiz-plugins-extra amixer texlive-full zathura
+pip install setuptools python-virtualenv
+
+# install emacs25 and set it as default
+add-apt-repository ppa:kelleyk/emacs
+apt update
+apt install emacs25
 
 # install gnome related operations e.g. gnome-session-quit (to log out from command line)
 apt-get install gnome-session-bin
@@ -164,3 +169,13 @@ ResultAny=yes
 Identity=unix-group:plugdev
 Action=org.freedesktop.udisks.drive-detach
 ResultAny=yes" >> /etc/polkit-1/localauthority/50-local.d/consolekit.pkla
+
+# install wangyi yun
+wget http://s1.music.126.net/download/pc/netease-cloud-music_1.0.0-2_amd64_ubuntu14.04.deb
+dpkg -i netease-cloud-music_1.0.0-2_amd64_ubuntu14.04.deb && apt-get install -f
+dpkg -i netease-cloud-music_1.0.0-2_amd64_ubuntu14.04.deb
+
+# link configeration of default programs for different types of files
+ln -s ~/Config/mimeapps.list ~/.config/mimeapps.list
+ln -s ~/Config/mimeapps.list ~/.local/share/applications/mimeapps.list
+ln -s ~/Config/.toprc ~/.toprc

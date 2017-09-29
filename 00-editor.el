@@ -64,6 +64,17 @@
 
 (global-set-key (kbd "C-c s") (quote thing-copy-string-to-mark))
 
+;; duplicate a line
+(defun duplicate-line()
+  (interactive)
+  (move-beginning-of-line 1)
+  (kill-line)
+  (yank)
+  (open-line 1)
+  (next-line 1)
+  (yank)
+)
+(global-set-key (kbd "C-c C-d") 'duplicate-line)
 
 ;; copy paragraph
 (defun copy-paragraph (&optional arg)
@@ -84,3 +95,11 @@
 ;; save cursor position
 (require 'saveplace)
 (setq-default save-place t)
+
+;; set keybindings for auto-complete
+(define-key ac-completing-map (kbd "RET") nil)
+
+;; set keybindings for ranger-mode
+(global-set-key (kbd "C-c C-f") 'ranger-mode)
+
+

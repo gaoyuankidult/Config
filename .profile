@@ -1,6 +1,3 @@
-# set default starting place
-cd ~/Desktop
-
 # shortcut to go to several frequently used directory
 alias cdd='cd ~/Desktop'
 alias cdc='cd ~/Config'
@@ -20,8 +17,8 @@ alias ..5="cd ../../../../.."
 alias g='git'
 
 # shortcut for emacs
-alias e='emacs -nw'
-alias ge='emacs' # graphic emacs
+alias e='emacs25 -nw'
+alias ge='emacs25' # graphic emacs
 
 # shortcut for source
 alias s='source'
@@ -79,6 +76,7 @@ export PATH="/home/alex/anaconda2/bin:$PATH"
 function ic() { # init conda
 	conda update conda
 	conda create -n "$1" python=2.7 anaconda
+	source activate "$1"
 }
 
 # switch to conda environment
@@ -102,9 +100,6 @@ alias cw="ssh -i /home/alex/.ssh/alex_yuan_gao.pem -l ubuntu 130.238.10.22"
 # connect to alex in inner network
 alias calex="ssh -X 130.238.17.189 terminator"
 
-# change the default backgroud to be relatively dark
-xsetroot -solid "#111111"
-
 # set default xclip to be output using ctrl+shift+c 
 alias xclip='xclip -selection c'
 
@@ -112,16 +107,16 @@ alias xclip='xclip -selection c'
 alias pycharm='~/Downloads/pycharm-community-2017.1.3/bin/pycharm.sh'
 
 # set shortcut to edit .profile file
-alias epf='emacs -nw ~/Config/.profile'
+alias epf='emacs25 -nw ~/Config/.profile'
 
 # set shortcut to source custom configeration
 alias spf='source ~/Config/.profile'
 
 # set shortcut to edit installation file
-alias el='emacs -nw ~/Config/lubuntu_setup.sh'
+alias el='emacs25 -nw ~/Config/lubuntu_setup.sh'
 
 # set shortcut to edit i3 config file
-alias ei3='emacs -nw ~/Config/i3/config'
+alias ei3='emacs25 -nw ~/Config/i3/config'
 
 # copy to clipboad
 function x() { # conda activate
@@ -145,3 +140,15 @@ alias gm='cd /media/'
 
 # debug i3
 alias di3="i3-msg 'debuglog on; shmlog on; reload'"
+
+# open display settings
+alias settings='DISPLAY=:0 unity-control-center'
+
+# set shortcut for changing init.el
+alias eei='emacs25 -nw ~/Config/init.el'
+
+# set default editor and visualization
+VISUAL="emacs25 -nw"; 
+export VISUAL 
+EDITOR="emacs25 -nw"; 
+export EDITOR
