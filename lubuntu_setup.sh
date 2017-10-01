@@ -47,8 +47,8 @@ if [ -f "/etc/default/keyboard.backup" -f "~/.ssh/id_rsa" -f "~/.ssh/id_rsa.pub"
 fi
 
 # download current package list and prepare for software installation
-apt-get update 
-apt-get install git terminator texmaker xclip tmux uget ssh python-pip sshpass gnome-do gnome-session-fallback i3 compizconfig-settings-manager compiz-plugins-extra amixer texlive-full zathura tty-clock task inotify-tools
+apt-get update add-apt-repository ppa:kelleyk/emacs
+apt-get install git terminator texmaker xclip tmux uget ssh python-pip sshpass gnome-do gnome-session-fallback i3 compizconfig-settings-manager compiz-plugins-extra alsa-utils texlive-full zathura tty-clock task inotify-tools
 pip install setuptools python-virtualenv
 
 # install emacs25 and set it as default
@@ -172,11 +172,17 @@ ResultAny=yes" >> /etc/polkit-1/localauthority/50-local.d/consolekit.pkla
 
 # install wangyi yun
 wget http://s1.music.126.net/download/pc/netease-cloud-music_1.0.0-2_amd64_ubuntu14.04.deb
-dpkg -i netease-cloud-music_1.0.0-2_amd64_ubuntu14.04.deb && apt-get install -f
+dpkg -i netease-cloud-music_1.0.0-2_amd64_ubuntu14.04.deb 
+apt-get install -f # dpkg will fail the first time 
 dpkg -i netease-cloud-music_1.0.0-2_amd64_ubuntu14.04.deb
 
 # link configeration of default programs for different types of files
+rm  ~/.config/mimeapps.list
 ln -s ~/Config/mimeapps.list ~/.config/mimeapps.list
+rm ~/.local/share/applications/mimeapps.list
+rm  ~/.local/share/applications/mimeapps.list
 ln -s ~/Config/mimeapps.list ~/.local/share/applications/mimeapps.list
+rm ~/.toprc
 ln -s ~/Config/.toprc ~/.toprc
+rm ~/.taskrc
 ln -s ~/Config/.taskrc ~/.taskrc
