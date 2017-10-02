@@ -193,13 +193,13 @@ bindsym $mod+Shift+F12 exec amixer -q set Master 2dB- unmute
 bindsym $mod+Shift+F10 exec amixer -D pulse set Master toggle
 
 # open document for todo
-bindsym $mod+w exec $term -T "todo" -x bash -c "stty -ixon && emacs -nw ~/Config/docs/todo/todo.tex"
+bindsym $mod+w exec $term -T "todo" -x bash -c "stty -ixon && emacs25 -nw ~/Config/docs/todo/todo.tex"
 for_window [class="Terminator" title="todo"] floating enable, \
 resize grow left 20, resize grow right 300, \
 resize grow down 200, resize grow up 250 
 
 # open document for log 
-bindsym $mod+s exec $term -T "log" -x bash -c "stty -ixon && emacs -nw ~/Config/docs/log/log.tex"
+bindsym $mod+s exec $term -T "log" -x bash -c "stty -ixon && emacs25 -nw ~/Config/docs/log/log.tex"
 for_window [class="Terminator" title="log"] floating enable, \
 resize grow left 100, resize grow right 100, \
 resize grow down 200, resize grow up 250 
