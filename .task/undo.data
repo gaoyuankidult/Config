@@ -1,3 +1,27 @@
 time 1506930972
 new [description:"a Implemente robot behaviours." entry:"1506930972" status:"pending" uuid:"983352de-16c3-40aa-aec0-fed0f1c69fca"]
 ---
+time 1507034748
+old [description:"a Implemente robot behaviours." entry:"1506930972" status:"pending" uuid:"983352de-16c3-40aa-aec0-fed0f1c69fca"]
+new [description:"a Implemente robot behaviours." end:"1507034748" entry:"1506930972" modified:"1507034748" status:"completed" uuid:"983352de-16c3-40aa-aec0-fed0f1c69fca"]
+---
+time 1507034886
+new [description:"Implement reactions to users" entry:"1507034886" status:"pending" uuid:"9f6552e3-65ca-47bc-ad03-0cb73d430d71"]
+---
+time 1507036567
+old [description:"Implement reactions to users" entry:"1507034886" status:"pending" uuid:"9f6552e3-65ca-47bc-ad03-0cb73d430d71"]
+new [description:"Implement reactions to users 1. Strategy 2. Robot next to complete next move" entry:"1507034886" modified:"1507036567" status:"pending" uuid:"9f6552e3-65ca-47bc-ad03-0cb73d430d71"]
+---
+time 1507036993
+new [description:"Implement 1 strategy" entry:"1507036993" status:"pending" uuid:"4d6ca47f-185b-4f2a-ae83-b77897cbc73d"]
+---
+time 1507037027
+new [description:"Implment 2 complete a move for the user." entry:"1507037027" status:"pending" uuid:"6463ad97-9f74-4a6d-a4a8-d13fa23fa099"]
+---
+time 1507052408
+old [description:"Implment 2 complete a move for the user." entry:"1507037027" status:"pending" uuid:"6463ad97-9f74-4a6d-a4a8-d13fa23fa099"]
+new [description:"Implment 2 complete a move for the user." end:"1507052408" entry:"1507037027" modified:"1507052408" status:"completed" uuid:"6463ad97-9f74-4a6d-a4a8-d13fa23fa099"]
+---
+time 1507052421
+new [description:"Test complet a move for user" entry:"1507052421" status:"pending" uuid:"6b04531b-9c5b-44d0-99b5-e1e71097f27d"]
+---

@@ -201,8 +201,9 @@ resize grow down 200, resize grow up 250
 # open document for log 
 bindsym $mod+s exec $term -T "log" -x bash -c "stty -ixon && emacs25 -nw ~/Config/docs/log/log.tex"
 for_window [class="Terminator" title="log"] floating enable, \
-resize grow left 100, resize grow right 100, \
-resize grow down 200, resize grow up 250 
+resize grow left 0, resize grow right 200, \
+resize grow down 200, resize grow up 250, \
+move right 400
 
 # set shortcut for starting and focusing on workflow
 bindsym $mod+q workspace 1:Code; exec ~/Config/i3/workflow.sh;
@@ -216,6 +217,9 @@ for_window [class="^Terminator$" title="Scratch"] move scratchpad
 bindsym $mod+Tab scratchpad show
 bindsym $mod+Shift+Tab exec --no-startup-id "$term -T Scratch"
 #bindsym $mod+Shift+Tab [class="^Terminator$" title="Scratch"] move scratchpad
+
+# set shortcut for choregraphe
+bindsym $mod+c exec /opt/Aldebaran/Choregraphe\ Suite\ 2.5/bin/choregraphe_launcher
 
 
 # create Log out, Reboot, Poweroff bindings
