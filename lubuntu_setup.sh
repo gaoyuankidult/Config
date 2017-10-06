@@ -186,3 +186,4 @@ rm ~/.toprc
 ln -s ~/Config/.toprc ~/.toprc
 rm ~/.taskrc
 ln -s ~/Config/.taskrc ~/.taskrc
+ln -s ~/Config/ssh/config  ~/.ssh/config
