@@ -1,2 +1,6 @@
+[description:"Fix the condition of miss match" end:"1507302847" entry:"1507283291" modified:"1507302847" status:"completed" uuid:"a3a178be-36b5-48f3-a84c-f19054368aef"]
+[description:"Implement 1 strategy" end:"1507218756" entry:"1507036993" modified:"1507218756" status:"completed" uuid:"4d6ca47f-185b-4f2a-ae83-b77897cbc73d"]
+[description:"Implement reactions to users 1. Strategy 2. Robot next to complete next move" end:"1507206929" entry:"1507034886" modified:"1507206929" status:"completed" uuid:"9f6552e3-65ca-47bc-ad03-0cb73d430d71"]
+[description:"Test complet a move for user" end:"1507206826" entry:"1507052421" modified:"1507206826" status:"completed" uuid:"6b04531b-9c5b-44d0-99b5-e1e71097f27d"]
 [description:"Implment 2 complete a move for the user." end:"1507052408" entry:"1507037027" modified:"1507052408" status:"completed" uuid:"6463ad97-9f74-4a6d-a4a8-d13fa23fa099"]
 [description:"a Implemente robot behaviours." end:"1507034748" entry:"1506930972" modified:"1507034748" status:"completed" uuid:"983352de-16c3-40aa-aec0-fed0f1c69fca"]

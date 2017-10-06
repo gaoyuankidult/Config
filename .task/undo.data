@@ -25,3 +25,28 @@ new [description:"Implment 2 complete a move for the user." end:"1507052408" ent
 time 1507052421
 new [description:"Test complet a move for user" entry:"1507052421" status:"pending" uuid:"6b04531b-9c5b-44d0-99b5-e1e71097f27d"]
 ---
+time 1507206826
+old [description:"Test complet a move for user" entry:"1507052421" status:"pending" uuid:"6b04531b-9c5b-44d0-99b5-e1e71097f27d"]
+new [description:"Test complet a move for user" end:"1507206826" entry:"1507052421" modified:"1507206826" status:"completed" uuid:"6b04531b-9c5b-44d0-99b5-e1e71097f27d"]
+---
+time 1507206929
+old [description:"Implement reactions to users 1. Strategy 2. Robot next to complete next move" entry:"1507034886" modified:"1507036567" status:"pending" uuid:"9f6552e3-65ca-47bc-ad03-0cb73d430d71"]
+new [description:"Implement reactions to users 1. Strategy 2. Robot next to complete next move" end:"1507206929" entry:"1507034886" modified:"1507206929" status:"completed" uuid:"9f6552e3-65ca-47bc-ad03-0cb73d430d71"]
+---
+time 1507207046
+new [description:"Balance different categories" entry:"1507207046" status:"pending" uuid:"bb4f9c01-e735-4e7d-992e-993f3b8e10ac"]
+---
+time 1507218756
+old [description:"Implement 1 strategy" entry:"1507036993" status:"pending" uuid:"4d6ca47f-185b-4f2a-ae83-b77897cbc73d"]
+new [description:"Implement 1 strategy" end:"1507218756" entry:"1507036993" modified:"1507218756" status:"completed" uuid:"4d6ca47f-185b-4f2a-ae83-b77897cbc73d"]
+---
+time 1507218768
+new [description:"Continue with strategy introduction" entry:"1507218768" status:"pending" uuid:"61831f6c-c38d-4751-88d4-e44acabf049b"]
+---
+time 1507283291
+new [description:"Fix the condition of miss match" entry:"1507283291" status:"pending" uuid:"a3a178be-36b5-48f3-a84c-f19054368aef"]
+---
+time 1507302847
+old [description:"Fix the condition of miss match" entry:"1507283291" status:"pending" uuid:"a3a178be-36b5-48f3-a84c-f19054368aef"]
+new [description:"Fix the condition of miss match" end:"1507302847" entry:"1507283291" modified:"1507302847" status:"completed" uuid:"a3a178be-36b5-48f3-a84c-f19054368aef"]
+---
