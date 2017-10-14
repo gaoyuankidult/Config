@@ -189,3 +189,7 @@ ln -s ~/Config/.taskrc ~/.taskrc
 
 # download and install screen lock for i3
 git clone https://github.com/meskarune/i3lock-fancy.git /usr/local/bin/
+
+# link ssh configeration files
+ln -s ~/Config/ssh/config  ~/.ssh/config
+
