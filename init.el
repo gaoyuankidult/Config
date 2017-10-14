@@ -35,8 +35,8 @@
 
 ;; list the packages you want
  (setq package-list
-    '(auctex auto-complete ranger)
-    )
+    '(auctex auto-complete ranger hungry-delete)
+ )
 
 
 ;; activate all the packages
@@ -84,4 +84,3 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
-

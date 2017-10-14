@@ -50,3 +50,49 @@ time 1507302847
 old [description:"Fix the condition of miss match" entry:"1507283291" status:"pending" uuid:"a3a178be-36b5-48f3-a84c-f19054368aef"]
 new [description:"Fix the condition of miss match" end:"1507302847" entry:"1507283291" modified:"1507302847" status:"completed" uuid:"a3a178be-36b5-48f3-a84c-f19054368aef"]
 ---
+time 1507596273
+new [description:"TEST the FULL SYSTEM" entry:"1507596273" status:"pending" uuid:"ce49e85a-cfc7-490d-a723-ad6052d41c30"]
+---
+time 1507622500
+new [description:"TEST the FULL SYSTEM" entry:"1507622500" status:"pending" uuid:"2f9cb662-3af0-4b37-8f90-0267aabd4d42"]
+---
+time 1507622505
+old [description:"TEST the FULL SYSTEM" entry:"1507596273" status:"pending" uuid:"ce49e85a-cfc7-490d-a723-ad6052d41c30"]
+new [description:"TEST the FULL SYSTEM" end:"1507622505" entry:"1507596273" modified:"1507622505" status:"completed" uuid:"ce49e85a-cfc7-490d-a723-ad6052d41c30"]
+---
+time 1508014541
+old [description:"Balance different categories" entry:"1507207046" status:"pending" uuid:"bb4f9c01-e735-4e7d-992e-993f3b8e10ac"]
+new [description:"Balance different categories" end:"1508014541" entry:"1507207046" modified:"1508014541" status:"completed" uuid:"bb4f9c01-e735-4e7d-992e-993f3b8e10ac"]
+---
+time 1508014542
+old [description:"Continue with strategy introduction" entry:"1507218768" status:"pending" uuid:"61831f6c-c38d-4751-88d4-e44acabf049b"]
+new [description:"Continue with strategy introduction" end:"1508014542" entry:"1507218768" modified:"1508014542" status:"completed" uuid:"61831f6c-c38d-4751-88d4-e44acabf049b"]
+---
+time 1508014544
+old [description:"TEST the FULL SYSTEM" entry:"1507622500" status:"pending" uuid:"2f9cb662-3af0-4b37-8f90-0267aabd4d42"]
+new [description:"TEST the FULL SYSTEM" end:"1508014544" entry:"1507622500" modified:"1508014544" status:"completed" uuid:"2f9cb662-3af0-4b37-8f90-0267aabd4d42"]
+---
+time 1508014561
+new [description:"Modify the questionnaire" entry:"1508014561" status:"pending" uuid:"efe1f201-996d-499e-9908-16673ff475ae"]
+---
+time 1508014572
+new [description:"Modify the questionnaire Priority:H" entry:"1508014572" status:"pending" uuid:"4e7667c2-1854-4118-b306-1a4fd3c712c8"]
+---
+time 1508014635
+old [description:"Modify the questionnaire" entry:"1508014561" status:"pending" uuid:"efe1f201-996d-499e-9908-16673ff475ae"]
+new [description:"Modify the questionnaire" end:"1508014635" entry:"1508014561" modified:"1508014635" status:"completed" uuid:"efe1f201-996d-499e-9908-16673ff475ae"]
+---
+time 1508014636
+old [description:"Modify the questionnaire Priority:H" entry:"1508014572" status:"pending" uuid:"4e7667c2-1854-4118-b306-1a4fd3c712c8"]
+new [description:"Modify the questionnaire Priority:H" end:"1508014636" entry:"1508014572" modified:"1508014636" status:"completed" uuid:"4e7667c2-1854-4118-b306-1a4fd3c712c8"]
+---
+time 1508014660
+new [description:"Modify the questionnaire" entry:"1508014660" priority:"H" status:"pending" uuid:"761a4924-59ec-4ec7-acac-d66c20ce9bb2"]
+---
+time 1508014780
+old [description:"Modify the questionnaire" entry:"1508014660" priority:"H" status:"pending" uuid:"761a4924-59ec-4ec7-acac-d66c20ce9bb2"]
+new [description:"Modify the questionnaire" end:"1508014780" entry:"1508014660" modified:"1508014780" priority:"H" status:"completed" uuid:"761a4924-59ec-4ec7-acac-d66c20ce9bb2"]
+---
+time 1508014782
+new [description:"Modify the questionnaire" entry:"1508014782" priority:"H" status:"pending" uuid:"4f937549-cebd-4361-bbf4-0c540359df1d"]
+---

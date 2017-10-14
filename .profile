@@ -165,4 +165,6 @@ function d(){
 # reset PS1 parameter in order to get better presentation
 export PS1="\n(\j)-(\A)\n#"
 
+# set alias for locking
 
+alias k="/usr/local/bin/i3lock-fancy/lock"

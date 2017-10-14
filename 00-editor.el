@@ -106,6 +106,11 @@
 ;; set keybindings for ranger-mode
 (global-set-key (kbd "C-c C-f") 'ranger-mode)
 
+;; reset delete keys
+(global-set-key (kbd "C-c DEL") 'hungry-delete-backward)
+(global-set-key (kbd "C-d") 'hungry-delete-forward)
+
+
 ;; set keybindings in ranger-mode
 (require 'ranger)
 (defun load-customized-file ()

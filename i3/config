@@ -221,15 +221,14 @@ bindsym $mod+Shift+Tab exec --no-startup-id "$term -T Scratch"
 # set shortcut for choregraphe
 bindsym $mod+c exec /opt/Aldebaran/Choregraphe\ Suite\ 2.5/bin/choregraphe_launcher
 
-
 # create Log out, Reboot, Poweroff bindings
-mode "Exit (L)ogout, (R)eboot, (P)oweroff" {
+mode "Exit, (L)ogout, (R)eboot, (P)oweroff" {
         bindsym $mod+r reboot
-        bindsym $mod+l exit
+		bindsym $mod+e exit
         bindsym $mod+p --no-startup-id i3exit shutdown, mode "default"
         # back to normal: Entr or Escape
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
 
-bindsym $mod+Shift+e mode "Exit (L)ogout, (R)eboot, (P)oweroff"
+bindsym $mod+Shift+e mode "Exit, (L)ogout, (R)eboot, (P)oweroff"

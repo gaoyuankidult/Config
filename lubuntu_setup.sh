@@ -186,3 +186,6 @@ rm ~/.toprc
 ln -s ~/Config/.toprc ~/.toprc
 rm ~/.taskrc
 ln -s ~/Config/.taskrc ~/.taskrc
+
+# download and install screen lock for i3
+git clone https://github.com/meskarune/i3lock-fancy.git /usr/local/bin/
