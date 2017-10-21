@@ -166,5 +166,7 @@ function d(){
 export PS1="\n(\j)-(\A)\n#"
 
 # set alias for locking
-
 alias k="/usr/local/bin/i3lock-fancy/lock"
+
+# set alias for printing in the university
+alias sp="nohup /usr/share/eduprint-client/pc-client-linux.sh & > /dev/null"

@@ -224,7 +224,7 @@ bindsym $mod+c exec /opt/Aldebaran/Choregraphe\ Suite\ 2.5/bin/choregraphe_launc
 # create Log out, Reboot, Poweroff bindings
 mode "Exit, (L)ogout, (R)eboot, (P)oweroff" {
         bindsym $mod+r reboot
-		bindsym $mod+e exit
+		bindsym $mod+l exit
         bindsym $mod+p --no-startup-id i3exit shutdown, mode "default"
         # back to normal: Entr or Escape
         bindsym Return mode "default"
