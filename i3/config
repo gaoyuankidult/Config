@@ -128,8 +128,8 @@ resize grow down 100, resize grow up 100
 # Open floating terminal
 bindsym $mod+t exec --no-startup-id $term -T "metaTerm"
 for_window [class="Terminator" title="metaTerm"] floating enable, \
-resize grow left 120, resize grow right 120, \
-resize grow down 30, resize grow up 30
+resize grow left 50, resize grow right 50, \
+resize grow down 20, resize grow up 20
 
 
 # reload the configuration file
