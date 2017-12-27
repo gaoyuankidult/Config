@@ -39,7 +39,9 @@ function crt() { # copy read template
 # shortcut for creating latex template in a git folder
 function clt() { # copy read templat
 	cp -r ~/Config/templates/icml $1
-	mv ./$1/example_paper.tex ./$1/${1,,}.tex
+    
+
+	mv ./$1/example_paper.tex ./$1/$(sed 's/^_//' <<< $(sed -r "s/([A-Z])/_\L\1/g" <<< "$1")).tex
 }
 
 # shortcut for running studying video
