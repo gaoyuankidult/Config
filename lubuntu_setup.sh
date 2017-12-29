@@ -95,6 +95,7 @@ ln -s ~/Config/i3/config ~/.config/i3/config
 ln -s ~/Config/i3/i3status.conf ~/.config/i3/i3status.conf
 
 # create a symbolic links to terminator configeration file
+mkdir -p ~/Config/terminator
 ln -s ~/Config/terminator/config ~/.config/terminator/config
 
 # generate ssh key and setup github

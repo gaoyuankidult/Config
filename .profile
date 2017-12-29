@@ -138,7 +138,7 @@ alias spr='source ~/Desktop/red-coast/start_dev.sh'
 alias i="sudo apt-get install"
 
 # go to folder media
-alias gm='cd /media/'
+alias gm='cd /media/alex/22E67196E6716AC5/Materials'
 
 # debug i3
 alias di3="i3-msg 'debuglog on; shmlog on; reload'"
