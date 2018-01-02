@@ -95,7 +95,7 @@ ln -s ~/Config/i3/config ~/.config/i3/config
 ln -s ~/Config/i3/i3status.conf ~/.config/i3/i3status.conf
 
 # create a symbolic links to terminator configeration file
-mkdir -p ~/Config/terminator
+mkdir -p ~/.config/terminator/
 ln -s ~/Config/terminator/config ~/.config/terminator/config
 
 # generate ssh key and setup github
@@ -108,14 +108,13 @@ echo "xclip -sel clip < ~/.ssh/id_rsa.pub"
 echo "...and paste it on GitHub ssh settings."
 
 # confirm that the user is done with the ssh
-while true; do
-    read -p "Have you done installation of git ?" yn
-    case $yn in
-        [Yy]* ) echo "Installation continues...";;
-        [Nn]* ) echo "Pleae install git fist.";;
-        * ) echo "Please answer yes or no.";;
-    esac
-done
+echo -n "Have you done installation of git ? (y/n)? "
+read answer
+if echo "$answer" | grep -iq "^y" ;then
+    echo "We can continue..."
+else
+    echo "You can do that latter"
+fi
 
 # install i3-gap for i3 environment under ubuntu 14.04
 sudo apt-get install autoconf libev-dev 
