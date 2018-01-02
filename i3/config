@@ -232,3 +232,7 @@ mode "Exit, (L)ogout, (R)eboot, (P)oweroff" {
 }
 
 bindsym $mod+Shift+e mode "Exit, (L)ogout, (R)eboot, (P)oweroff"
+
+# adjust window appearence
+for_window [class="Terminator"] border pixel 1
+client.focused #008000 #008000 #008000

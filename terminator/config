@@ -1,41 +1,41 @@
 [global_config]
-  window_state = hidden
-  enabled_plugins = ,
-  title_hide_sizetext = True
   always_split_with_profile = True
-  geometry_hinting = False
   borderless = True
+  enabled_plugins = ,
+  geometry_hinting = False
+  tab_position = hidden
+  title_hide_sizetext = True
   title_receive_bg_color = "#0fc900"
   title_transmit_bg_color = "#000000"
-  tab_position = hidden
+  window_state = hidden
 [keybindings]
-  go_left = <Alt>h
   go_down = <Alt>j
+  go_left = <Alt>h
   go_right = <Alt>l
   go_up = <Alt>k
-[profiles]
-  [[default]]
-    scrollbar_position = hidden
-    palette = "#000000:#aa0000:#00aa00:#aa5500:#0000aa:#aa00aa:#00aaaa:#aaaaaa:#555555:#ff5555:#55ff55:#ffff55:#5555ff:#ff55ff:#55ffff:#ffffff"
-    login_shell = True
-    background_image = None
-    background_darkness = 0.83
-    background_type = transparent
-    use_system_font = False
-    cursor_color = "#ffffff"
-    foreground_color = "#0a7a04"
-    icon_bell = False
-    show_titlebar = False
-    antialias = False
-    cursor_shape = ibeam
-    allow_bold = False
 [layouts]
   [[default]]
     [[[child1]]]
-      type = Terminal
       parent = window0
       profile = default
+      type = Terminal
     [[[window0]]]
-      type = Window
       parent = ""
+      type = Window
 [plugins]
+[profiles]
+  [[default]]
+    allow_bold = False
+    antialias = False
+    background_darkness = 0.83
+    background_image = None
+    background_type = transparent
+    cursor_color = "#ffffff"
+    cursor_shape = ibeam
+    foreground_color = "#0a7a04"
+    icon_bell = False
+    login_shell = True
+    palette = "#000000:#aa0000:#00aa00:#aa5500:#0000aa:#aa00aa:#00aaaa:#aaaaaa:#555555:#ff5555:#55ff55:#ffff55:#5555ff:#ff55ff:#55ffff:#ffffff"
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False
