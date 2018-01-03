@@ -75,8 +75,8 @@ bindsym $mod+space focus mode_toggle
 # focus the child container
 #bindsym $mod+d focus child
 
-set $ws1 1:Code
-set $ws2 2:IDE
+set $ws1 1:Tasks
+set $ws2 2:Code
 set $ws3 3:Web
 set $ws4 4:LaTeX
 set $ws6 6:Music
