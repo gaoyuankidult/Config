@@ -151,7 +151,7 @@ sudo make install
 apt-get install feh
 
 # install udiskie to autoload removable disk for i3
-apt-get install python-setuptools udisks python-pip python-gobject python-yaml libgio2.0 gobject-introspection libgtk2.0-0 libnotify4 gettext gir1.2-notify-0.7
+apt-get install python-setuptools udisks python-pip python-gobject python-yaml libgio2.0 gobject-introspection libgtk2.0-0 libnotify4 gettext gir1.2-notify-0.7 retext
 pip install udiskie
 echo "[mount]
 Identity=unix-group:plugdev

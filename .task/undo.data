@@ -242,3 +242,6 @@ new [description:"Checkout summery thing at AAMAS." entry:"1515016166" modified:
 time 1515016296
 new [description:"Apply VISA" entry:"1515016296" modified:"1515016296" status:"pending" uuid:"f3b26725-4ab5-452e-a4af-3a836ae13889"]
 ---
+time 1515454812
+new [description:"fix head" entry:"1515454812" modified:"1515454812" status:"pending" uuid:"549ba30c-1c59-4c9a-a961-423636a63cfd"]
+---

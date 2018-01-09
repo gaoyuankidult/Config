@@ -8,5 +8,5 @@ terminator -T "IPython" -e "/home/alex/anaconda2/bin/ipython" &
 terminator -T "Any" -e "/home/alex/anaconda2/bin/python ~/Desktop/drawille/examples/rotating_cube.py" &
 terminator -T "Ranger" -x emacs25 -nw -f ranger-mode &
 terminator -T "Clock" -x tty-clock &
-terminator -T "Monitor" -x top &
+terminator -T "Monitor" -x htop &
 
