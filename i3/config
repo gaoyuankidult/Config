@@ -126,7 +126,6 @@ resize grow left 300, resize grow right 300, \
 resize grow down 100, resize grow up 100 
 
 # Open floating terminal
-bindsym $mod+t exec --no-startup-id $term -T "metaTerm"
 for_window [class="Terminator" title="metaTerm"] floating enable, \
 resize grow left 50, resize grow right 50, \
 resize grow down 20, resize grow up 20
@@ -207,6 +206,7 @@ move right 400
 
 # set shortcut for starting and focusing on workflow
 bindsym $mod+q workspace $ws1; exec ~/Config/i3/workflow.sh;
+bindsym $mod+t workspace $ws1; [title="IPython"] focus
 bindsym $mod+a workspace $ws1; [title="Ranger"] focus
 
 # make an instance of scratchpad
@@ -225,7 +225,9 @@ bindsym $mod+c exec /opt/Aldebaran/Choregraphe\ Suite\ 2.5/bin/choregraphe_launc
 mode "Exit, (L)ogout, (R)eboot, (P)oweroff" {
         bindsym $mod+r reboot
 		bindsym $mod+l exit
+		bindsym $mod+k bash /usr/local/bin/lock
         bindsym $mod+p --no-startup-id i3exit shutdown, mode "default"
+		
         # back to normal: Entr or Escape
         bindsym Return mode "default"
         bindsym Escape mode "default"

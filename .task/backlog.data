@@ -8,3 +8,15 @@
 {"description":"Checkout summery thing at AAMAS.","entry":"20180103T214926Z","modified":"20180103T214926Z","status":"pending","uuid":"408fb5b1-7fee-41e2-914b-b684e8a76ffb"}
 {"description":"Apply VISA","entry":"20180103T215136Z","modified":"20180103T215136Z","status":"pending","uuid":"f3b26725-4ab5-452e-a4af-3a836ae13889"}
 {"description":"fix head","entry":"20180108T234012Z","modified":"20180108T234012Z","status":"pending","uuid":"549ba30c-1c59-4c9a-a961-423636a63cfd"}
+{"description":"Checkout summery thing at AAMAS.","end":"20180126T130326Z","entry":"20180103T214926Z","modified":"20180126T130326Z","status":"completed","uuid":"408fb5b1-7fee-41e2-914b-b684e8a76ffb"}
+{"description":"fix head","end":"20180126T130337Z","entry":"20180108T234012Z","modified":"20180126T130337Z","status":"completed","uuid":"549ba30c-1c59-4c9a-a961-423636a63cfd"}
+{"description":"a Website dev","entry":"20180126T130346Z","modified":"20180126T130346Z","status":"pending","uuid":"78ff71cf-9fef-49b3-ad76-69cb1162bd96"}
+{"description":"a Website dev","due":"20180126T225959Z","entry":"20180126T130346Z","modified":"20180126T130825Z","status":"pending","uuid":"78ff71cf-9fef-49b3-ad76-69cb1162bd96"}
+{"description":"a Website dev","due":"20180126T225959Z","end":"20180126T150214Z","entry":"20180126T130346Z","modified":"20180126T150214Z","status":"completed","uuid":"78ff71cf-9fef-49b3-ad76-69cb1162bd96"}
+{"description":"a Pay the bill to Joe","due":"20180131T225959Z","entry":"20180126T150422Z","modified":"20180126T150422Z","status":"pending","uuid":"6f5b7b69-c294-4a0c-ba10-d16a4ec1806b"}
+{"description":"Apply VISA","due":"20180126T225959Z","entry":"20180103T215136Z","modified":"20180126T150542Z","status":"pending","uuid":"f3b26725-4ab5-452e-a4af-3a836ae13889"}
+{"description":"Apply Internship at Google","due":"20180126T225959Z","entry":"20180102T153516Z","modified":"20180126T150559Z","status":"pending","uuid":"dfd8ce7e-aacc-4ba3-b3a9-132209ae2852"}
+{"description":"add Finish the Integration","due":"20180127T225959Z","entry":"20180126T150926Z","modified":"20180126T150926Z","priority":"H","project":"BlueCoast","status":"pending","uuid":"365fa8a7-ef12-4275-ade9-ef31b43df5b8"}
+{"description":"n","entry":"20180126T151015Z","modified":"20180126T151015Z","status":"pending","uuid":"eb42df5f-be4c-4679-9f66-e372ff671916"}
+{"description":"n","end":"20180126T151109Z","entry":"20180126T151015Z","modified":"20180126T151109Z","status":"completed","uuid":"eb42df5f-be4c-4679-9f66-e372ff671916"}
+{"description":"add Finish the Integration","due":"20180128T230000Z","entry":"20180126T150926Z","modified":"20180126T151256Z","priority":"H","project":"BlueCoast","status":"pending","uuid":"365fa8a7-ef12-4275-ade9-ef31b43df5b8"}
