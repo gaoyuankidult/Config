@@ -173,6 +173,7 @@ alias k="/usr/local/bin/i3lock-fancy/lock"
 # set alias for printing in the university
 alias sp="nohup /usr/share/eduprint-client/pc-client-linux.sh & > /dev/null"
 
-
 # add to naoqi pythonpath
 export PYTHONPATH=${PYTHONPATH}:/media/alex/22E67196E6716AC5/Materials/Research/BlueCoast/pynaoqi-python2.7-2.5.5.5-linux64/lib/python2.7/site-packages
+
+

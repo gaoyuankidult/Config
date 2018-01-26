@@ -193,3 +193,6 @@ git clone https://github.com/meskarune/i3lock-fancy.git /usr/local/bin/
 # link ssh configeration files
 ln -s ~/Config/ssh/config  ~/.ssh/config
 
+# install fzf
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
