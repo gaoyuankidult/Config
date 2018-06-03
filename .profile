@@ -178,3 +178,17 @@ export PYTHONPATH=${PYTHONPATH}:/media/alex/22E67196E6716AC5/Materials/Research/
 
 # show tasks before starting any terminal
 task next
+
+# add alias for gnome-open
+alias o="gnome-open"
+
+# add mujoco position
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/alex/.mujoco/mjpro150/bin
+
+# add nvidia driver path
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/nvidia-390
+
+# shortcut for running unity
+function ou() {
+	nohup ~/Unity-2018.1.0f2/Editor/Unity > /tmp/nohup.out 2> /tmp/nohup_error.out &
+}
