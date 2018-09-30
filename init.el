@@ -77,7 +77,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-	(ess jedi auto-complete markdown-preview-mode auctex))))
+	(csharp-mode ess jedi auto-complete markdown-preview-mode auctex))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

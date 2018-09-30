@@ -3,3 +3,8 @@ Host alega837
     HostName majestix.cb.uu.se
     Port 22
     User alega837
+
+Host labshare
+    HostName 130.238.17.173
+    Port 22
+    User labshare

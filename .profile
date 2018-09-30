@@ -131,8 +131,8 @@ alias xd='x $(pwd)'
 # set shortcut to go to different projects
 alias gps='cd ~/Desktop/SocialRoboics/motor-blog/web-static'
 alias gpp='cd /media/alex/22E67196E6716AC5/Materials/Research/Proximity/tsv_files'
-alias gpr='cd ~/Desktop/red-coast'
-alias spr='source ~/Desktop/red-coast/start_dev.sh'
+alias gpb='cd /media/alex/22E67196E6716AC5/Materials/Research/BlueCoast/BlueCoastNewDev/PepperSocial/'
+
 
 # to accelerate installation
 alias i="sudo apt-get install"
