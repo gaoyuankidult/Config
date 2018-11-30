@@ -109,13 +109,13 @@ alias xclip='xclip -selection c'
 alias pycharm='~/Downloads/pycharm-community-2017.1.3/bin/pycharm.sh'
 
 # set shortcut to edit .profile file
-alias epf='emacs25 -nw ~/Config/.profile'
+alias epf='emacs -nw ~/Config/.profile'
 
 # set shortcut to source custom configeration
 alias spf='source ~/Config/.profile'
 
 # set shortcut to edit installation file
-alias el='emacs25 -nw ~/Config/lubuntu_setup.sh'
+alias el='emacs -nw ~/Config/lubuntu_setup.sh'
 
 # set shortcut to edit i3 config file
 alias ei3='emacs25 -nw ~/Config/i3/config'

@@ -48,7 +48,7 @@ fi
 
 # download current package list and prepare for software installation
 apt-get update add-apt-repository ppa:kelleyk/emacs
-apt-get install git terminator texmaker xclip tmux uget ssh python-pip sshpass gnome-do gnome-session-flashback i3 compizconfig-settings-manager compiz-plugins-extra alsa-utils texlive-full zathura tty-clock task inotify-tools
+apt-get install taskwarrior git terminator texmaker xclip tmux uget ssh python-pip sshpass gnome-do gnome-session-flashback i3 compizconfig-settings-manager compiz-plugins-extra alsa-utils texlive-full zathura tty-clock task inotify-tools
 pip install setuptools python-virtualenv
 
 # install emacs25 and set it as default
