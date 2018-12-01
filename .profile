@@ -129,6 +129,7 @@ function x() { # conda activate
 alias xd='x $(pwd)'
 
 # set shortcut to go to different projects
+alias grp='cd /media/alex/22E67196E6716AC5/Materials/Research'
 alias gps='cd ~/Desktop/SocialRoboics/motor-blog/web-static'
 alias gpp='cd /media/alex/22E67196E6716AC5/Materials/Research/Proximity/tsv_files'
 alias gpb='cd /media/alex/22E67196E6716AC5/Materials/Research/BlueCoast/BlueCoastNewDev/PepperSocial/'
