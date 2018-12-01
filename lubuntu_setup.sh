@@ -75,6 +75,7 @@ ln -s ~/Config/01-system.el ~/.emacs.d/01-system.el
 ln -s ~/Config/00-editor ~/.emacs.d/00-editor
 ln -s ~/Config/.gitconfig ~/.gitconfig
 ln -s ~/Config/.gitignore ~/.gitignore
+sudo chown $USER:$USER ~/.emacs.d -R
 
 # disable capslock button
 cp /etc/default/keyboard /etc/default/keyboard.backup
