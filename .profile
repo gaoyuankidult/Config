@@ -129,9 +129,7 @@ function x() { # conda activate
 alias xd='x $(pwd)'
 
 # set shortcut to go to different projects
-alias gps='cd ~/Desktop/SocialRoboics/motor-blog/web-static'
-alias gpp='cd /media/alex/22E67196E6716AC5/Materials/Research/Proximity/tsv_files'
-alias gpb='cd /media/alex/22E67196E6716AC5/Materials/Research/BlueCoast/BlueCoastNewDev/PepperSocial/'
+alias gdp='cd /media/alex/22E67196E6716AC5/Materials/Research/SelfPlay/DaniMLAgent/ml-agents/'
 
 
 # to accelerate installation
@@ -174,7 +172,7 @@ alias k="/usr/local/bin/lock"
 alias sp="nohup /usr/share/eduprint-client/pc-client-linux.sh & > /dev/null"
 
 # add to naoqi pythonpath
-export PYTHONPATH=${PYTHONPATH}:/media/alex/22E67196E6716AC5/Materials/Research/BlueCoast/pynaoqi-python2.7-2.5.5.5-linux64/lib/python2.7/site-packages
+export PYTHONPATH=${PYTHONPATH}:/media/alex/22E67196E6716AC5/Materials/Research/EscapeRoom/ThirdPartySoftware/pynaoqi-python2.7-2.5.7.1-linux64/lib/python2.7/site-packages 
 
 # show tasks before starting any terminal
 task next
@@ -192,3 +190,7 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/nvidia-390
 function ou() {
 	nohup ~/Unity-2018.1.0f2/Editor/Unity > /tmp/nohup.out 2> /tmp/nohup_error.out &
 }
+
+# go to research directory
+# shortcut for moving to current project
+alias grp='cd /media/alex/22E67196E6716AC5/Materials/Research/'

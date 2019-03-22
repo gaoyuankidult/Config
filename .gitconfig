@@ -75,6 +75,7 @@
 	cd = commit --amend
 	cad = commit -a --amend
 	ced = commit --allow-empty --amend
+	cn = clone
 	#############
 	d = diff
 	dc = diff --cached
