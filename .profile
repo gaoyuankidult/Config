@@ -56,7 +56,7 @@ function serun() {
 
 # shortcut for simple git routines
 function ag() { # auto git
-	git a .
+	git add -u
 	git commit -m "$1"
 	git push
 }
