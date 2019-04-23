@@ -1,7 +1,6 @@
 # Product Name
 > Short blurb about what your product does.
 
-[![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
 [![Downloads Stats][npm-downloads]][npm-url]
 
@@ -15,12 +14,6 @@ OS X & Linux:
 
 ```sh
 npm install my-crazy-module --save
-```
-
-Windows:
-
-```sh
-edit autoexec.bat
 ```
 
 ## Usage example
@@ -57,11 +50,11 @@ npm test
 
 ## Meta
 
-Your Name – [@YourTwitter](https://twitter.com/dbader_org) – YourEmail@example.com
+Yuan Gao – [@alexyuangao](https://twitter.com/alexyuangao) – gaoyaunkidult@gmail.com
 
-Distributed under the XYZ license. See ``LICENSE`` for more information.
+Distributed under the MIT license. See ``LICENSE`` for more information.
 
-[https://github.com/yourname/github-link](https://github.com/dbader/)
+[https://github.com/gaoyuankidult/github-link](https://github.com/gaoyuankidult/)
 
 [npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/datadog-metrics
