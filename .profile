@@ -193,3 +193,8 @@ function ou() {
 # go to research directory
 # shortcut for moving to current project
 alias grp='cd /media/alex/22E67196E6716AC5/Materials/Research/'
+
+# start tmux sessions
+tmux new -s screen
+tmux new -s default
+tmux new -s runner
