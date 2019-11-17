@@ -48,7 +48,7 @@ fi
 
 # download current package list and prepare for software installation
 apt-get update add-apt-repository ppa:kelleyk/emacs
-apt-get install taskwarrior git terminator texmaker xclip tmux uget ssh python-pip sshpass gnome-do gnome-session-flashback i3 compizconfig-settings-manager compiz-plugins-extra alsa-utils texlive-full zathura tty-clock task inotify-tools
+apt-get install taskwarrior git terminator texmaker xclip tmux uget ssh python-pip sshpass gnome-do gnome-session-flashback i3 compizconfig-settings-manager compiz-plugins-extra alsa-utils texlive-full zathura tty-clock inotify-tools
 pip install setuptools python-virtualenv
 
 # install emacs25 and set it as default
@@ -60,10 +60,11 @@ apt install emacs25
 apt-get install gnome-session-bin
 
 # install anaconda
-wget http://repo.continuum.io/archive/Anaconda2-4.0.0-Linux-x86_64.sh
-chmod +x Anaconda2-4.0.0-Linux-x86_64.sh
-./Anaconda2-4.0.0-Linux-x86_64.sh
-rm Anaconda2-4.0.0-Linux-x86_64.sh
+ANACONDA=Anaconda3-2019.10-Linux-x86_64.sh
+wget https://repo.anaconda.com/archive/$ANACONDA
+chmod +x $ANACONDA
+./$ANACONDA
+rm $ANACONDA
 
 # create symbolic link to emacs configeration files, .gitconfig, .gitignore and bash_profile.
 echo 'source ~/Config/.profile' >> ~/.bashrc 
@@ -87,7 +88,7 @@ mkdir -p ~/.config/autostart/
 ln -s ~/Config/autostart.desktop ~/.config/autostart/autostart.desktop
 
 # set remote url of Config to be via git instead of https
-cd /home/alex/Config
+cd /home/$USER/Config
 git remote set-url origin git@github.com:gaoyuankidult/Config.git
 
 # create symbolic links to i3 configeration files
@@ -100,8 +101,8 @@ mkdir -p ~/.config/terminator/
 ln -s ~/Config/terminator/config ~/.config/terminator/config
 
 # generate ssh key and setup github
-sudo -H -u alex bash -c 'ssh-keygen -t rsa -b 4096 -C "gaoyuankidult@gmail.com"'
-sudo -H -u alex bash -c 'eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_rsa'
+sudo -H -u $USER bash -c 'ssh-keygen -t rsa -b 4096 -C "gaoyuankidult@gmail.com"'
+sudo -H -u $USER bash -c 'eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_rsa'
 
 echo ""
 echo "Please excute..."
