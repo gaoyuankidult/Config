@@ -1,12 +1,24 @@
 ;;; install packages for on a fresh emacs
-
 ;; load library for directory loading
 (load-file "~/.emacs.d/load-directory-mu.el")
 (require 'load-directory-mu)
 
+
+;; undefine a debian variable
+ (defconst debian-emacs-flavor 'emacs23
+   "A symbol representing the particular debian flavor of emacs running.
+ Something like 'emacs20, 'xemacs20, etc.")
+
 ;;; install el-get  package
 ;; (see also: https://github.com/dimitri/el-get#basic-setup)
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
+
+
+;; hide menu bar
+(menu-bar-mode -1) 
+
+;; hide statu line
+(setq-default mode-line-format nil)
 
 (setq
  my:el-get-packages
@@ -26,16 +38,15 @@
 (setq jedi:setup-keys t)                      ; optional
 (setq jedi:complete-on-dot t)                 ; optional
 
-;; list the needed packages
-
+;; list the needed sources
 (setq package-archives '(("elpa" . "http://tromey.com/elpa/")
                          ("gnu" . "http://elpa.gnu.org/packages/")
-						 ("melpa-stable" . "https://stable.melpa.org/packages/")
+			 ("melpa-stable" . "https://stable.melpa.org/packages/")
                          ("marmalade" . "http://marmalade-repo.org/packages/")))
 
 ;; list the packages you want
  (setq package-list
-    '(auctex auto-complete ranger hungry-delete)
+    '(auto-complete ranger hungry-delete)
  )
 
 

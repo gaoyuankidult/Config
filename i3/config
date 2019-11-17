@@ -11,7 +11,7 @@
 
 set $mod Mod4
 set $term terminator
-set $browser google-chrome
+set $browser firefox
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below. ISO 10646 = Unicode
@@ -151,11 +151,12 @@ exec --no-startup-id i3-msg 'workspace $ws6; exec netease-cloud-music'
 # assign workspace if excution not done correctly
 # Assign Workspaces:
 assign [class="netease-cloud-music"] $ws6
-assign [class="Google-chrome"] $ws3
+assign [class="firefox"] $ws3
 #assign [title="LaTeX"] $ws4
 
 # create gaps configerations
-gaps inner 20
+smart_gaps on
+gaps left 0
 
 # solve conflicts between gaps with feh
 for_window [class=".*"] border pixel 0
@@ -164,6 +165,7 @@ hide_edge_borders both
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
+	mode invisible
 	colors {
 		# Whole color settings
 		background #000000
@@ -180,12 +182,11 @@ bar {
     workspace_buttons yes # Show workspace buttons
     strip_workspace_numbers no # strip away WS numbers
 	position top # i3bar position
-    
 	# Using custom i3status.conf
 	status_command i3status -c ~/.config/i3/i3status.conf
 }
 
-
+bindsym --release Super_L exec i3-msg bar mode toggle
 # adjust system volumns
 bindsym $mod+Shift+F11 exec amixer -q set Master 2dB+ unmute
 bindsym $mod+Shift+F12 exec amixer -q set Master 2dB- unmute
@@ -222,20 +223,25 @@ bindsym $mod+Shift+Tab exec --no-startup-id "$term -T Scratch"
 bindsym $mod+c exec /opt/Aldebaran/Choregraphe\ Suite\ 2.5/bin/choregraphe_launcher
 
 # create Log out, Reboot, Poweroff bindings
-mode "Exit, (L)ogout, (R)eboot, (P)oweroff" {
-        bindsym $mod+r reboot
-		bindsym $mod+l exit
-		bindsym $mod+k bash /usr/local/bin/lock
-        bindsym $mod+p --no-startup-id i3exit shutdown, mode "default"
-		
-        # back to normal: Entr or Escape
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-}
+set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 
-bindsym $mod+Shift+e mode "Exit, (L)ogout, (R)eboot, (P)oweroff"
+mode "$mode_system" {
+    bindsym l exec --no-startup-id ~/Config/i3/bin/i3exit lock, mode "default"
+    bindsym e exec --no-startup-id ~/Config/i3/bin/i3exit logout, mode "default"
+    bindsym s exec --no-startup-id ~/Config/i3/bin/i3exit suspend, mode "default"
+    bindsym h exec --no-startup-id ~/Config/i3/bin/i3exit hibernate, mode "default"
+    bindsym r exec --no-startup-id ~/Config/i3/bin/i3exit reboot, mode "default"
+    bindsym Shift+s exec --no-startup-id ~/Config/i3/bin/i3exit shutdown, mode "default"
+
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+Shift+e mode "$mode_system"
+
 
 # adjust window appearence
 for_window [class="Terminator"] border pixel 1
 client.focused #008000 #008000 #008000
-exec "setxkbmap -layout se"
+exec "setxkbmap -layout us"
+

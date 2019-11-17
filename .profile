@@ -193,3 +193,7 @@ function ou() {
 # go to research directory
 # shortcut for moving to current project
 alias grp='cd /media/$USER/22E67196E6716AC5/Materials/Research/'
+
+
+# add i3exit to the i3 path
+PATH=$PATH:~/Config/i3/bin
