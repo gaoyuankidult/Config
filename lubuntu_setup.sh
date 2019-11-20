@@ -1,4 +1,4 @@
-#!/bin/bash
+l#!/bin/bash
 
 #################################################################################
 # Coding conventions
@@ -32,6 +32,9 @@
 #
 #
 ################################################################################
+
+# set user
+USERME=x0
 
 # require sudo right
 if [[ $UID != 0 ]]; then
@@ -76,7 +79,7 @@ ln -s ~/Config/01-system.el ~/.emacs.d/01-system.el
 ln -s ~/Config/00-editor ~/.emacs.d/00-editor
 ln -s ~/Config/.gitconfig ~/.gitconfig
 ln -s ~/Config/.gitignore ~/.gitignore
-sudo chown $USER:$USER ~/.emacs.d -R
+sudo chown $USERME:$USERME ~/.emacs.d -R
 
 # disable capslock button
 cp /etc/default/keyboard /etc/default/keyboard.backup
@@ -88,7 +91,7 @@ mkdir -p ~/.config/autostart/
 ln -s ~/Config/autostart.desktop ~/.config/autostart/autostart.desktop
 
 # set remote url of Config to be via git instead of https
-cd /home/$USER/Config
+cd /home/$USERME/Config
 git remote set-url origin git@github.com:gaoyuankidult/Config.git
 
 # create symbolic links to i3 configeration files
@@ -101,8 +104,8 @@ mkdir -p ~/.config/terminator/
 ln -s ~/Config/terminator/config ~/.config/terminator/config
 
 # generate ssh key and setup github
-sudo -H -u $USER bash -c 'ssh-keygen -t rsa -b 4096 -C "gaoyuankidult@gmail.com"'
-sudo -H -u $USER bash -c 'eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_rsa'
+sudo -H -u $USERME bash -c 'ssh-keygen -t rsa -b 4096 -C "gaoyuankidult@gmail.com"'
+sudo -H -u $USERME bash -c 'eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_rsa'
 
 echo ""
 echo "Please excute..."
@@ -198,3 +201,9 @@ ln -s ~/Config/ssh/config  ~/.ssh/config
 # install fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
+
+# install i3 gaps
+add-apt-repository ppa:kgilmer/speed-ricer
+apt-get update
+apt --fix-broken install
+apt-get install i3-gap

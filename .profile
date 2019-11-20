@@ -1,10 +1,11 @@
+USERME=x0
 # shortcut to go to several frequently used directory
 alias cdd='cd ~/Desktop'
 alias cdc='cd ~/Config'
 alias cdr='cd ~/Desktop/PhD/Research'
 
 # shortcut for moving to current project
-alias cdp='cd /media/$USER/22E67196E6716AC5/Materials/Research/BlueCoast/blue-coast'
+alias cdp='cd /media/$USERME/22E67196E6716AC5/Materials/Research/BlueCoast/blue-coast'
 
 # shortcut to nevigate up directory using ..n
 alias ..="cd .."
@@ -45,13 +46,13 @@ function clt() { # copy read templat
 }
 
 # shortcut for running studying video
-alias cds='cd /home/$USER/Downloads/RH/RHCELiveLessons/'
+alias cds='cd /home/$USERME/Downloads/RH/RHCELiveLessons/'
 function srun() {
-	nohup mplayer /home/$USER/Downloads/RH/RHCSALiveLessons/part$1.mp4 > /tmp/nohup.out 2> /tmp/nohup_error.out &
+	nohup mplayer /home/$USERME/Downloads/RH/RHCSALiveLessons/part$1.mp4 > /tmp/nohup.out 2> /tmp/nohup_error.out &
 }
 
 function serun() {
-	nohup mplayer /home/$USER/Downloads/RH/RHCELiveLessons/part$1.mp4 > /tmp/nohup.out 2> /tmp/nohup_error.out &
+	nohup mplayer /home/$USERME/Downloads/RH/RHCELiveLessons/part$1.mp4 > /tmp/nohup.out 2> /tmp/nohup_error.out &
 }
 
 # shortcut for simple git routines
@@ -72,7 +73,7 @@ function cl() {
 }
 
 # add anaconda path to system
-export PATH="/home/$USER/anaconda2/bin:$PATH"
+export PATH="/home/$USERME/anaconda2/bin:$PATH"
 
 # create anaconda package
 function ic() { # init conda
@@ -90,17 +91,17 @@ function coa() { # conda activate
 alias cod="source deactivate"
 
 # automatically start to do RedCoast project (this command is used only on my private computer)
-alias rc="ssh -X alega837 ssh -X $USER ~/Desktop/pycharm-2016.2.3/bin/pycharm.sh"
+alias rc="ssh -X alega837 ssh -X $USERME ~/Desktop/pycharm-2016.2.3/bin/pycharm.sh"
 
 # automatically start a terminator at pc-alega837 (this command is used only on my private computer)
-alias pct="ssh -X alega837 ssh -X $USER terminator"
-alias ppct="sshpass -pim3Mb[jbiZ ssh -X alega837 ssh -X $USER terminator"
+alias pct="ssh -X alega837 ssh -X $USERME terminator"
+alias ppct="sshpass -pim3Mb[jbiZ ssh -X alega837 ssh -X $USERME terminator"
 
 # connect to our groups website cloud (this command is used only on alega837 pc)
-alias cw="ssh -i /home/$USER/.ssh/$USER_yuan_gao.pem -l ubuntu 130.238.10.22"
+alias cw="ssh -i /home/$USERME/.ssh/$USERME_yuan_gao.pem -l ubuntu 130.238.10.22"
 
-# connect to $USER in inner network
-alias c$USER="ssh -X 130.238.17.189 terminator"
+# connect to $USERME in inner network
+alias c$USERME="ssh -X 130.238.17.189 terminator"
 
 # set default xclip to be output using ctrl+shift+c 
 alias xclip='xclip -selection c'
@@ -129,13 +130,13 @@ function x() { # conda activate
 alias xd='x $(pwd)'
 
 # go to the research folder
-alias grp='cd /media/$USER/22E67196E6716AC5/Materials/Research'
+alias grp='cd /media/$USERME/22E67196E6716AC5/Materials/Research'
 
 # to accelerate installation
 alias i="sudo apt-get install"
 
 # go to folder media
-alias gm='cd /media/$USER/22E67196E6716AC5/Materials'
+alias gm='cd /media/$USERME/22E67196E6716AC5/Materials'
 
 # debug i3
 alias di3="i3-msg 'debuglog on; shmlog on; reload'"
@@ -171,7 +172,7 @@ alias k="/usr/local/bin/lock"
 alias sp="nohup /usr/share/eduprint-client/pc-client-linux.sh & > /dev/null"
 
 # add to naoqi pythonpath
-export PYTHONPATH=${PYTHONPATH}:/media/$USER/22E67196E6716AC5/Materials/Research/EscapeRoom/ThirdPartySoftware/pynaoqi-python2.7-2.5.7.1-linux64/lib/python2.7/site-packages 
+export PYTHONPATH=${PYTHONPATH}:/media/$USERME/22E67196E6716AC5/Materials/Research/EscapeRoom/ThirdPartySoftware/pynaoqi-python2.7-2.5.7.1-linux64/lib/python2.7/site-packages 
 
 # show tasks before starting any terminal
 task next
@@ -180,7 +181,7 @@ task next
 alias o="gnome-open"
 
 # add mujoco position
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/$USER/.mujoco/mjpro150/bin
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/$USERME/.mujoco/mjpro150/bin
 
 # add nvidia driver path
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/nvidia-390
@@ -192,7 +193,7 @@ function ou() {
 
 # go to research directory
 # shortcut for moving to current project
-alias grp='cd /media/$USER/22E67196E6716AC5/Materials/Research/'
+alias grp='cd /media/$USERME/22E67196E6716AC5/Materials/Research/'
 
 
 # add i3exit to the i3 path

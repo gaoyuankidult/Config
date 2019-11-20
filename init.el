@@ -64,7 +64,7 @@
 
 ;;; activate different packages
 ; invoke the AUCTeX package (LaTeX support)
-(require 'tex-site)
+;;(require 'tex-site)
 
 ;; configure latex mode
 (defun LaTeX-mode()
