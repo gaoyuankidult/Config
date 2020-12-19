@@ -36,6 +36,11 @@
 # set user
 USERME=x0
 
+# update and install eccentials
+apt-get update
+
+# require sudo right
+
 # require sudo right
 if [[ $UID != 0 ]]; then
     echo "Please run this script with sudo:"
@@ -44,20 +49,20 @@ if [[ $UID != 0 ]]; then
 fi
 
 # check existence of backup file
-if [ -f "/etc/default/keyboard.backup" -f "~/.ssh/id_rsa" -f "~/.ssh/id_rsa.pub" ]; then
-    echo "System has been modified, please reset using reset.sh"
-    exit 1
-fi
+#if [ -f "/etc/default/keyboard.backup" -f "~/.ssh/id_rsa" -f "~/.ssh/id_rsa.pub" ]; then
+#    echo "System has been modified, please reset using reset.sh"
+#    exit 1
+#fi
 
 # download current package list and prepare for software installation
 apt-get update add-apt-repository ppa:kelleyk/emacs
-apt-get install taskwarrior git terminator texmaker xclip tmux uget ssh python-pip sshpass gnome-do gnome-session-flashback i3 compizconfig-settings-manager compiz-plugins-extra alsa-utils texlive-full zathura tty-clock inotify-tools
+apt-get install taskwarrior git terminator texmaker xclip tmux uget ssh sshpass gnome-session-flashback i3 compizconfig-settings-manager compiz-plugins-extra alsa-utils texlive-full zathura tty-clock inotify-tools
 pip install setuptools python-virtualenv
 
 # install emacs25 and set it as default
-add-apt-repository ppa:kelleyk/emacs
-apt update
-apt install emacs25
+sudo apt purge emacs
+sudo apt install --reinstall libotf0 libm17n-0
+sudo apt install emacs
 
 # install gnome related operations e.g. gnome-session-quit (to log out from command line)
 apt-get install gnome-session-bin
@@ -92,6 +97,8 @@ ln -s ~/Config/autostart.desktop ~/.config/autostart/autostart.desktop
 
 # set remote url of Config to be via git instead of https
 cd /home/$USERME/Config
+
+# require sudo right
 git remote set-url origin git@github.com:gaoyuankidult/Config.git
 
 # create symbolic links to i3 configeration files
@@ -121,7 +128,7 @@ else
     echo "You can do that latter"
 fi
 
-# install i3-gap for i3 environment under ubuntu 14.04
+# install i3-gap for i3 environment under ubuntu 20.04
 sudo apt-get install autoconf libev-dev 
 sudo apt-get install libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev libxcb-icccm4-dev libyajl-dev libstartup-notification0-dev libxcb-randr0-dev libev-dev libxcb-cursor-dev libxcb-xinerama0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev autoconf libxcb-xrm-dev
 
