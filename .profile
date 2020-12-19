@@ -18,8 +18,8 @@ alias ..5="cd ../../../../.."
 alias g='git'
 
 # shortcut for emacs
-alias e='emacs25 -nw'
-alias ge='emacs25' # graphic emacs
+alias e='emacs -nw'
+alias ge='emacs' # graphic emacs
 
 # shortcut for source
 alias s='source'
@@ -119,7 +119,7 @@ alias spf='source ~/Config/.profile'
 alias el='emacs -nw ~/Config/lubuntu_setup.sh'
 
 # set shortcut to edit i3 config file
-alias ei3='emacs25 -nw ~/Config/i3/config'
+alias ei3='emacs -nw ~/Config/i3/config'
 
 # copy to clipboad
 function x() { # conda activate
@@ -148,9 +148,9 @@ alias settings='DISPLAY=:0 unity-control-center'
 alias eei='emacs25 -nw ~/Config/init.el'
 
 # set default editor and visualization
-VISUAL="emacs25 -nw"; 
+VISUAL="emacs -nw"; 
 export VISUAL 
-EDITOR="emacs25 -nw"; 
+EDITOR="emacs -nw"; 
 export EDITOR
 
 # set shortcut for task management

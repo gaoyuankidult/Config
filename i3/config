@@ -146,23 +146,26 @@ exec --no-startup-id nm-applet
 
 #exec --no-startup-id i3-msg 'workspace 4:LaTeX; exec $term -x emacs25 -nw -T "LaTeX"-f ranger-mode'
 exec --no-startup-id i3-msg 'workspace $ws3; exec $browser'
-exec --no-startup-id i3-msg 'workspace $ws6; exec netease-cloud-music'
+#exec --no-startup-id i3-msg 'workspace $ws6; exec netease-cloud-music'
 
 # assign workspace if excution not done correctly
 # Assign Workspaces:
-assign [class="netease-cloud-music"] $ws6
+#assign [class="netease-cloud-music"] $ws6
 assign [class="firefox"] $ws3
 #assign [title="LaTeX"] $ws4
 
 # create gaps configerations
 smart_gaps on
-gaps left 0
+gaps left 8
+gaps right 8
+gaps top 8
+gaps bottom 8
 
 # solve conflicts between gaps with feh
-for_window [class=".*"] border pixel 30
+for_window [class="^.*"] border pixel 8
 hide_edge_borders both
 
-# Start i3bar to display a workspace bar (plus the system information i3status
+# Start i3bar to disPplay a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
 	mode invisible
@@ -193,22 +196,8 @@ bindsym $mod+Shift+F11 exec amixer -q set Master 2dB+ unmute
 bindsym $mod+Shift+F12 exec amixer -q set Master 2dB- unmute
 bindsym $mod+Shift+F10 exec amixer -D pulse set Master toggle
 
-# open document for todo
-bindsym $mod+w exec $term -T "todo" -x bash -c "stty -ixon && emacs25 -nw ~/Config/docs/todo/todo.tex"
-for_window [class="Terminator" title="todo"] floating enable, \
-resize grow left 20, resize grow right 300, \
-resize grow down 200, resize grow up 250 
-
-# open document for log 
-bindsym $mod+s exec $term -T "log" -x bash -c "stty -ixon && emacs25 -nw ~/Config/docs/log/log.tex"
-for_window [class="Terminator" title="log"] floating enable, \
-resize grow left 0, resize grow right 200, \
-resize grow down 200, resize grow up 250, \
-move right 400
-
 # set shortcut for starting and focusing on workflow
 bindsym $mod+q workspace $ws1; exec ~/Config/i3/workflow.sh;
-bindsym $mod+t workspace $ws1; [title="IPython"] focus
 bindsym $mod+a workspace $ws1; [title="Ranger"] focus
 
 # make an instance of scratchpad
@@ -218,7 +207,7 @@ for_window [class="^Terminator$" title="Scratch"] move scratchpad
 # set shortcut for scratch pad
 bindsym $mod+Tab scratchpad show
 bindsym $mod+Shift+Tab exec --no-startup-id "$term -T Scratch"
-#bindsym $mod+Shift+Tab [class="^Terminator$" title="Scratch"] move scratchpad
+#bindsym $mod+Shft+Tab [class="^Terminator$" title="Scratch"] move scratchpad
 
 # set shortcut for choregraphe
 bindsym $mod+c exec /opt/Aldebaran/Choregraphe\ Suite\ 2.5/bin/choregraphe_launcher
@@ -242,7 +231,6 @@ bindsym $mod+Shift+e mode "$mode_system"
 
 
 # adjust window appearence
-for_window [class="Terminator"] border pixel 1
-client.focused #008000 #008000 #008000
+#for_window [class="Terminator"] border pixel 1
+#client.focused #008000 #008000 #008000
 exec "setxkbmap -layout us"
-

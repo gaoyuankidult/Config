@@ -1,200 +1,23 @@
 // vim:ts=4:sw=4:et
 {
-    // splith split container with 3 children
-    "border": "normal",
+    "border": "pixel",
+    "current_border_width": 8,
     "floating": "auto_off",
-    "layout": "splith",
+    "geometry": {
+       "height": 1048,
+       "width": 936,
+       "x": 960,
+       "y": 8
+    },
+    "name": "Ranger",
     "percent": 1,
-    "type": "con",
-    "nodes": [
-        {
-            // splitv split container with 3 children
-            "border": "normal",
-            "floating": "auto_off",
-            "layout": "splitv",
-            "percent": 0.203333333333333,
-            "type": "con",
-            "nodes": [
-                {
-                    "border": "pixel",
-                    "current_border_width": 0,
-                    "floating": "auto_off",
-                    "geometry": {
-                       "height": 427,
-                       "width": 642,
-                       "x": 0,
-                       "y": 0
-                    },
-                    "name": "Task",
-                    "percent": 0.253333333333333,
-                    "swallows": [
-                       {
-                        "class": "^Terminator$",
-                        "instance": "^terminator$",
-                        "title": "^Task$",
-                        "transient_for": "^$"
-                       }
-                    ],
-                    "type": "con"
-                },
-                {
-                    "border": "pixel",
-                    "current_border_width": 0,
-                    "floating": "auto_off",
-                    "geometry": {
-                       "height": 427,
-                       "width": 642,
-                       "x": 0,
-                       "y": 0
-                    },
-                    "name": "/bin/bash",
-                    "percent": 0.343333333333333,
-                    "swallows": [
-                       {
-                        "class": "^Terminator$",
-                        "instance": "^terminator$",
-                        "title": "^IPython$",
-                        "transient_for": "^$"
-                       }
-                    ],
-                    "type": "con"
-                },
-                {
-                    "border": "pixel",
-                    "current_border_width": 0,
-                    "floating": "auto_off",
-                    "geometry": {
-                       "height": 427,
-                       "width": 642,
-                       "x": 0,
-                       "y": 0
-                    },
-                    "name": "IPython",
-                    "percent": 0.443333333333333,
-                    "swallows": [
-                       {
-                        "class": "^Terminator$",
-                        "instance": "^terminator$",
-                        "title": "^Any$",
-                        "transient_for": "^$"
-                       }
-                    ],
-                    "type": "con"
-                }
-            ]
-        },
-        {
-            // splith split container with 1 children
-            "border": "normal",
-            "floating": "auto_off",
-            "layout": "splitv",
-            "percent": 0.563333333333334,
-            "type": "con",
-            "nodes": [
-                {
-                    "border": "pixel",
-                    "current_border_width": 0,
-                    "floating": "auto_off",
-                    "geometry": {
-                       "height": 427,
-                       "width": 642,
-                       "x": 0,
-                       "y": 0
-                    },
-                    "name": "Ranger",
-                    "percent": 0.7,
-                    "swallows": [
-                       {
-                        "class": "^Terminator$",
-                        "instance": "^terminator$",
-                        "title": "^Ranger$",
-                        "transient_for": "^$"
-                       }
-                    ],
-                    "type": "con"
-                },
-                {
-                    "border": "pixel",
-                    "current_border_width": 0,
-                    "floating": "auto_off",
-                    "geometry": {
-                       "height": 427,
-                       "width": 642,
-                       "x": 0,
-                       "y": 0
-                    },
-                    "name": "Runner",
-                    "percent": 0.3,
-                    "swallows": [
-                       {
-                        "class": "^Terminator$",
-                        "instance": "^terminator$",
-                        "title": "^Runner$",
-                        "transient_for": "^$"
-                       }
-                    ],
-                    "type": "con"
-                }
-				
-            ]
-        },
-        {
-            // splitv split container with 2 children
-            "border": "normal",
-            "floating": "auto_off",
-            "layout": "splitv",
-            "percent": 0.183333333333333,
-            "type": "con",
-            "nodes": [
-                {
-                    "border": "pixel",
-                    "current_border_width": 0,
-                    "floating": "auto_off",
-                    "geometry": {
-                       "height": 427,
-                       "width": 642,
-                       "x": 0,
-                       "y": 0
-                    },
-                    "name": "Clock",
-                    "percent": 0.16,
-                    "swallows": [
-                       {
-                        "class": "^Terminator$",
-                        "instance": "^terminator$",
-                        "title": "^Clock$",
-                        "transient_for": "^$"
-                       }
-                    ],
-                    "type": "con"
-                },
-                {
-                    "border": "pixel",
-                    "current_border_width": 0,
-                    "floating": "auto_off",
-                    "geometry": {
-                       "height": 427,
-                       "width": 642,
-                       "x": 0,
-                       "y": 0
-                    },
-                    "name": "Monitor",
-                    "percent": 0.84,
-                    "swallows": [
-                       {
-                        "class": "^Terminator$",
-                        "instance": "^terminator$",
-                        "title": "^Monitor$",
-                        "transient_for": "^$"
-                       }
-                    ],
-                    "type": "con"
-                }
-            ]
-        }
-    ]
+    "swallows": [
+       {
+       // "class": "^Terminator$",
+       // "instance": "^terminator$",
+       // "title": "^Ranger$"
+       }
+    ],
+    "type": "con"
 }
-
-
-
 

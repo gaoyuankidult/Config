@@ -213,4 +213,4 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 add-apt-repository ppa:kgilmer/speed-ricer
 apt-get update
 apt --fix-broken install
-apt-get install i3-gap
+apt-get install i3-gaps
